@@ -1,0 +1,516 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:switches
+LIBS:pt-module-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "ProbeTester Module Power"
+Date "28.7.2017"
+Rev "0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L L L?
+U 1 1 5979FADF
+P 6300 2275
+F 0 "L?" V 6250 2275 50  0000 C CNN
+F 1 "68uH" V 6375 2275 50  0000 C CNN
+F 2 "Inductors_SMD:L_7.3x7.3_H4.5" H 6300 2275 50  0001 C CNN
+F 3 "" H 6300 2275 50  0001 C CNN
+	1    6300 2275
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5979FBA7
+P 5950 2500
+F 0 "D?" H 5950 2400 50  0000 C CNN
+F 1 "B1100/B" H 5950 2600 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMB" H 5950 2500 50  0001 C CNN
+F 3 "" H 5950 2500 50  0001 C CNN
+	1    5950 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5979FF78
+P 6325 1975
+F 0 "D?" H 6325 2075 50  0000 C CNN
+F 1 "STTH102A" H 6325 1875 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 6325 1975 50  0001 C CNN
+F 3 "" H 6325 1975 50  0001 C CNN
+	1    6325 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 597A00D9
+P 5950 2125
+F 0 "C?" V 5825 2075 50  0000 L CNN
+F 1 "100nF" V 6050 2000 50  0000 L CNN
+F 2 "" H 5950 2125 50  0001 C CNN
+F 3 "" H 5950 2125 50  0001 C CNN
+	1    5950 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 597A06EF
+P 7100 2500
+F 0 "R?" V 7180 2500 50  0000 C CNN
+F 1 "110k" V 7100 2500 50  0000 C CNN
+F 2 "" V 7030 2500 50  0001 C CNN
+F 3 "" H 7100 2500 50  0001 C CNN
+	1    7100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 597A072F
+P 6875 2975
+F 0 "R?" V 6955 2975 50  0000 C CNN
+F 1 "6.2k" V 6875 2975 50  0000 C CNN
+F 2 "" V 6805 2975 50  0001 C CNN
+F 3 "" H 6875 2975 50  0001 C CNN
+	1    6875 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 597A08FB
+P 4150 2450
+F 0 "C?" V 4000 2400 50  0000 L CNN
+F 1 "4.7uF 100V" V 4275 2200 50  0000 L CNN
+F 2 "" H 4188 2300 50  0001 C CNN
+F 3 "" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 597A11B1
+P 3800 2075
+F 0 "#PWR?" H 3800 1925 50  0001 C CNN
+F 1 "VDD" H 3800 2225 50  0000 C CNN
+F 2 "" H 3800 2075 50  0001 C CNN
+F 3 "" H 3800 2075 50  0001 C CNN
+	1    3800 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener_Small D?
+U 1 1 597A1DBE
+P 6700 1975
+F 0 "D?" H 6700 1885 50  0000 C CNN
+F 1 "10V" H 6700 2085 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323" V 6700 1975 50  0001 C CNN
+F 3 "" V 6700 1975 50  0001 C CNN
+	1    6700 1975
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 597A23E8
+P 5675 3100
+F 0 "#PWR?" H 5675 2850 50  0001 C CNN
+F 1 "GND" H 5675 2950 50  0000 C CNN
+F 2 "" H 5675 3100 50  0001 C CNN
+F 3 "" H 5675 3100 50  0001 C CNN
+	1    5675 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 597A2705
+P 7425 2225
+F 0 "#PWR?" H 7425 2075 50  0001 C CNN
+F 1 "VCC" H 7425 2375 50  0000 C CNN
+F 2 "" H 7425 2225 50  0001 C CNN
+F 3 "" H 7425 2225 50  0001 C CNN
+	1    7425 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP16331 U?
+U 1 1 597A39D8
+P 4850 4950
+F 0 "U?" H 4850 4975 60  0000 C CNN
+F 1 "MCP16331" H 4850 5350 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 4850 4800 60  0001 C CNN
+F 3 "" H 4850 4800 60  0001 C CNN
+	1    4850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 597A3A30
+P 3700 4800
+F 0 "#PWR?" H 3700 4650 50  0001 C CNN
+F 1 "VCC" H 3700 4950 50  0000 C CNN
+F 2 "" H 3700 4800 50  0001 C CNN
+F 3 "" H 3700 4800 50  0001 C CNN
+	1    3700 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4300 5050
+$Comp
+L D D?
+U 1 1 597A3B9C
+P 4825 4250
+F 0 "D?" H 4825 4350 50  0000 C CNN
+F 1 "STTH102A" H 4825 4150 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 4825 4250 50  0001 C CNN
+F 3 "" H 4825 4250 50  0001 C CNN
+	1    4825 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Zener_Small D?
+U 1 1 597A3C2F
+P 4100 4550
+F 0 "D?" H 4100 4650 50  0000 C CNN
+F 1 "10V" H 4100 4450 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323" V 4100 4550 50  0001 C CNN
+F 3 "" V 4100 4550 50  0001 C CNN
+	1    4100 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 597A4475
+P 5675 5175
+F 0 "D?" H 5675 5075 50  0000 C CNN
+F 1 "DB2J317" H 5675 5275 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323" H 5675 5175 50  0001 C CNN
+F 3 "" H 5675 5175 50  0001 C CNN
+	1    5675 5175
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 597A575C
+P 6400 5175
+F 0 "C?" V 6250 5125 50  0000 L CNN
+F 1 "22uF 6.3V" V 6525 4975 50  0000 L CNN
+F 2 "" H 6438 5025 50  0001 C CNN
+F 3 "" H 6400 5175 50  0001 C CNN
+	1    6400 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 597A5CC4
+P 6925 5150
+F 0 "R?" V 7005 5150 50  0000 C CNN
+F 1 "31.6k" V 6925 5150 45  0000 C CNN
+F 2 "" V 6855 5150 50  0001 C CNN
+F 3 "" H 6925 5150 50  0001 C CNN
+	1    6925 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 597A5E07
+P 6675 5650
+F 0 "R?" V 6755 5650 50  0000 C CNN
+F 1 "10k" V 6675 5650 50  0000 C CNN
+F 2 "" V 6605 5650 50  0001 C CNN
+F 3 "" H 6675 5650 50  0001 C CNN
+	1    6675 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L L L?
+U 1 1 597A7031
+P 6050 4950
+F 0 "L?" V 6000 4950 50  0000 C CNN
+F 1 "15uH" V 6125 4950 50  0000 C CNN
+F 2 "Inductors_SMD:L_Taiyo-Yuden_NR-40xx_HandSoldering" H 6050 4950 50  0001 C CNN
+F 3 "" H 6050 4950 50  0001 C CNN
+	1    6050 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 597A77C8
+P 7325 4800
+F 0 "#PWR?" H 7325 4650 50  0001 C CNN
+F 1 "+3.3V" H 7325 4940 50  0000 C CNN
+F 2 "" H 7325 4800 50  0001 C CNN
+F 3 "" H 7325 4800 50  0001 C CNN
+	1    7325 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 597A82FE
+P 6000 5775
+F 0 "#PWR?" H 6000 5525 50  0001 C CNN
+F 1 "GND" H 6000 5625 50  0000 C CNN
+F 2 "" H 6000 5775 50  0001 C CNN
+F 3 "" H 6000 5775 50  0001 C CNN
+	1    6000 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 597A079A
+P 6650 2525
+F 0 "C?" V 6500 2475 50  0000 L CNN
+F 1 "22uF 25V" V 6775 2350 50  0000 L CNN
+F 2 "" H 6688 2375 50  0001 C CNN
+F 3 "" H 6650 2525 50  0001 C CNN
+	1    6650 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 597B8124
+P 5675 4800
+F 0 "C?" V 5550 4750 50  0000 L CNN
+F 1 "100nF" V 5775 4675 50  0000 L CNN
+F 2 "" H 5675 4800 50  0001 C CNN
+F 3 "" H 5675 4800 50  0001 C CNN
+	1    5675 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP16331 U?
+U 1 1 597A1586
+P 5150 2275
+F 0 "U?" H 5150 2275 60  0000 C CNN
+F 1 "MCP16331" H 5150 2675 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 5150 2125 60  0001 C CNN
+F 3 "" H 5150 2125 60  0001 C CNN
+	1    5150 2275
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 2475 3    60   Input ~ 0
+PWREN
+Text Notes 3300 1725 0    60   ~ 0
+Switching Regulator\n+18..48V in, +15V/500mA out
+Text Notes 3325 4025 0    60   ~ 0
+Switching Regulator\n+15V in, +3.3V/500mA out
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 597BEB38
+P 7725 2225
+F 0 "#FLG?" H 7725 2300 50  0001 C CNN
+F 1 "PWR_FLAG" H 7725 2375 50  0000 C CNN
+F 2 "" H 7725 2225 50  0001 C CNN
+F 3 "" H 7725 2225 50  0001 C CNN
+	1    7725 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 597BF359
+P 7700 4810
+F 0 "#FLG?" H 7700 4885 50  0001 C CNN
+F 1 "PWR_FLAG" H 7700 4960 50  0000 C CNN
+F 2 "" H 7700 4810 50  0001 C CNN
+F 3 "" H 7700 4810 50  0001 C CNN
+	1    7700 4810
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 597C106F
+P 5400 5775
+F 0 "#FLG?" H 5400 5850 50  0001 C CNN
+F 1 "PWR_FLAG" H 5400 5925 50  0000 C CNN
+F 2 "" H 5400 5775 50  0001 C CNN
+F 3 "" H 5400 5775 50  0001 C CNN
+	1    5400 5775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 2275 7100 2350
+Connection ~ 7100 2275
+Wire Wire Line
+	7425 2275 7425 2225
+Wire Wire Line
+	5700 2725 5700 2525
+Connection ~ 6900 2275
+Wire Wire Line
+	6900 1975 6800 1975
+Wire Wire Line
+	6900 2275 6900 1975
+Wire Wire Line
+	6475 1975 6600 1975
+Wire Wire Line
+	6450 2275 7725 2275
+Wire Wire Line
+	5775 1975 6175 1975
+Wire Wire Line
+	5950 2225 5950 2350
+Wire Wire Line
+	5700 2275 6150 2275
+Wire Wire Line
+	4150 2600 4150 2975
+Wire Wire Line
+	3800 2075 3800 2175
+Wire Wire Line
+	5950 2975 5950 2650
+Connection ~ 5950 2975
+Wire Wire Line
+	3700 4800 3700 4850
+Wire Wire Line
+	3700 4850 4300 4850
+Wire Wire Line
+	4100 4850 4100 4650
+Connection ~ 4100 4850
+Wire Wire Line
+	4100 4450 4100 4250
+Wire Wire Line
+	4100 4250 4675 4250
+Wire Wire Line
+	5400 4950 5900 4950
+Wire Wire Line
+	6200 4950 7700 4950
+Wire Wire Line
+	5675 4900 5675 5025
+Wire Wire Line
+	5675 4250 5675 4700
+Wire Wire Line
+	4975 4250 5675 4250
+Connection ~ 6650 2975
+Wire Wire Line
+	6400 4950 6400 5025
+Connection ~ 5675 4950
+Wire Wire Line
+	6925 4950 6925 5000
+Connection ~ 6400 4950
+Wire Wire Line
+	5400 5200 5475 5200
+Wire Wire Line
+	5475 5200 5475 5425
+Wire Wire Line
+	5475 5425 6925 5425
+Wire Wire Line
+	6925 5300 6925 5650
+Connection ~ 6925 5425
+Wire Wire Line
+	4850 5650 6525 5650
+Wire Wire Line
+	5675 5325 5675 5650
+Connection ~ 5675 5650
+Wire Wire Line
+	6400 5650 6400 5325
+Connection ~ 6400 5650
+Wire Wire Line
+	7325 4950 7325 4800
+Connection ~ 6925 4950
+Wire Wire Line
+	6650 2275 6650 2375
+Connection ~ 6650 2275
+Wire Wire Line
+	3800 2175 4600 2175
+Wire Wire Line
+	4150 2175 4150 2300
+Connection ~ 4150 2175
+Connection ~ 5950 2275
+Wire Wire Line
+	5950 1975 5950 2025
+Connection ~ 5950 1975
+Wire Wire Line
+	5775 1975 5775 2025
+Wire Wire Line
+	5775 2025 5700 2025
+Wire Wire Line
+	5675 4650 5475 4650
+Wire Wire Line
+	5475 4650 5475 4700
+Wire Wire Line
+	5475 4700 5400 4700
+Connection ~ 5675 4650
+Wire Wire Line
+	6925 5650 6825 5650
+Wire Wire Line
+	4850 5500 4850 5650
+Wire Wire Line
+	6000 5650 6000 5775
+Connection ~ 6000 5650
+Wire Wire Line
+	6650 2975 6650 2675
+Wire Wire Line
+	7100 2975 7025 2975
+Wire Wire Line
+	4150 2975 6725 2975
+Wire Wire Line
+	5675 2975 5675 3100
+Connection ~ 5675 2975
+Wire Wire Line
+	5150 2825 5150 2975
+Connection ~ 5150 2975
+Wire Wire Line
+	5700 2725 7100 2725
+Connection ~ 7100 2725
+Wire Notes Line
+	3225 1500 3225 3425
+Wire Notes Line
+	3225 3425 8025 3425
+Wire Notes Line
+	8025 3425 8025 1500
+Wire Notes Line
+	8025 1500 3225 1500
+Wire Notes Line
+	3250 3800 3250 6150
+Wire Notes Line
+	3250 6150 8050 6150
+Wire Notes Line
+	8050 6150 8050 3800
+Wire Notes Line
+	8050 3800 3250 3800
+Wire Wire Line
+	7725 2275 7725 2225
+Connection ~ 7425 2275
+Wire Wire Line
+	7700 4950 7700 4810
+Connection ~ 7325 4950
+Wire Wire Line
+	4500 2475 4500 2375
+Wire Wire Line
+	4500 2375 4600 2375
+Wire Wire Line
+	5400 5650 5400 5775
+Connection ~ 5400 5650
+Wire Wire Line
+	7100 2650 7100 2975
+$EndSCHEMATC
