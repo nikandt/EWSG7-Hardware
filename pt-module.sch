@@ -35,8 +35,8 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
-Title "ProbeTest Module"
+Sheet 1 3
+Title "ProbeTester Module"
 Date ""
 Rev ""
 Comp ""
@@ -51,5 +51,23 @@ U 5979DB00
 F0 "PT Module Power" 60
 F1 "pt-module-power.sch" 60
 F2 "PWREN" I L 7150 3625 60 
+$EndSheet
+$Sheet
+S 7200 1450 1200 1300
+U 597BC91A
+F0 "PT Module RS485" 60
+F1 "pt-module-rs485.sch" 60
+F2 "Rc" I L 7200 1650 60 
+F3 "~REc" I L 7200 1800 60 
+F4 "DEc" I L 7200 1950 60 
+F5 "Dc" I L 7200 2100 60 
+F6 "Rd" I R 8400 1650 60 
+F7 "~REd" I R 8400 1800 60 
+F8 "DEd" I R 8400 1950 60 
+F9 "Dd" I R 8400 2100 60 
+F10 "Ad" I R 8400 2400 60 
+F11 "Bd" I R 8400 2550 60 
+F12 "Ac" I L 7200 2400 60 
+F13 "Bc" I L 7200 2550 60 
 $EndSheet
 $EndSCHEMATC
