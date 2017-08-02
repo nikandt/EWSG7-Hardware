@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "ProbeTester Module"
 Date ""
 Rev ""
@@ -98,4 +98,18 @@ Wire Wire Line
 	6500 3650 6500 2100
 Wire Wire Line
 	6500 2100 7200 2100
+$Sheet
+S 1100 2800 1000 1050
+U 598183C5
+F0 "Probe module" 60
+F1 "probe_module.sch" 60
+F2 "prb1_pwr_ctrl" I R 2100 2900 60 
+F3 "prb1_rs_ctrl" I R 2100 3000 60 
+F4 "prb1_a" I R 2100 3100 60 
+F5 "prb1_b" I R 2100 3200 60 
+F6 "prb2_rs_ctrl" I R 2100 3300 60 
+F7 "prb2_a" I R 2100 3400 60 
+F8 "prb2_b" I R 2100 3500 60 
+F9 "prb2_pwr_ctrl" I R 2100 3600 60 
+$EndSheet
 $EndSCHEMATC
