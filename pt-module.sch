@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "ProbeTester Module"
 Date ""
 Rev ""
@@ -99,17 +99,27 @@ Wire Wire Line
 Wire Wire Line
 	6500 2100 7200 2100
 $Sheet
-S 1100 2800 1000 1050
+S 1300 3000 1000 1050
 U 598183C5
 F0 "Probe module" 60
 F1 "probe_module.sch" 60
-F2 "prb1_pwr_ctrl" I R 2100 2900 60 
-F3 "prb1_rs_ctrl" I R 2100 3000 60 
-F4 "prb1_a" I R 2100 3100 60 
-F5 "prb1_b" I R 2100 3200 60 
-F6 "prb2_rs_ctrl" I R 2100 3300 60 
-F7 "prb2_a" I R 2100 3400 60 
-F8 "prb2_b" I R 2100 3500 60 
-F9 "prb2_pwr_ctrl" I R 2100 3600 60 
+F2 "prb1_pwr_ctrl" I R 2300 3100 60 
+F3 "prb1_rs_ctrl" I R 2300 3200 60 
+F4 "prb1_a" I R 2300 3300 60 
+F5 "prb1_b" I R 2300 3400 60 
+F6 "prb2_rs_ctrl" I R 2300 3500 60 
+F7 "prb2_a" I R 2300 3600 60 
+F8 "prb2_b" I R 2300 3700 60 
+F9 "prb2_pwr_ctrl" I R 2300 3800 60 
+$EndSheet
+$Sheet
+S 1700 4950 900  650 
+U 59819805
+F0 "PT module interface" 60
+F1 "pt-module-interface.sch" 60
+F2 "prb-pwr-btn" I R 2600 5050 60 
+F3 "prb-rs-btn" I R 2600 5200 60 
+F4 "prb-pwr-led-in" I R 2600 5350 60 
+F5 "prb-rs-led-in" I R 2600 5500 60 
 $EndSheet
 $EndSCHEMATC
