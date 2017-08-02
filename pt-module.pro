@@ -1,4 +1,4 @@
-update=cccc 27. Heinäkuu 2017 14.22.51
+update=8/2/2017 9:37:15 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=stm32
 LibName31=switches
+LibName32=ESD_Protection
