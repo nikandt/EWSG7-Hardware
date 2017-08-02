@@ -99,27 +99,25 @@ Wire Wire Line
 Wire Wire Line
 	6500 2100 7200 2100
 $Sheet
-S 1300 3000 1000 1050
+S 2600 3350 1000 1050
 U 598183C5
 F0 "Probe module" 60
 F1 "probe_module.sch" 60
-F2 "prb1_pwr_ctrl" I R 2300 3100 60 
-F3 "prb1_rs_ctrl" I R 2300 3200 60 
-F4 "prb1_a" I R 2300 3300 60 
-F5 "prb1_b" I R 2300 3400 60 
-F6 "prb2_rs_ctrl" I R 2300 3500 60 
-F7 "prb2_a" I R 2300 3600 60 
-F8 "prb2_b" I R 2300 3700 60 
-F9 "prb2_pwr_ctrl" I R 2300 3800 60 
+F2 "prb1_pwr_ctrl" I R 3600 3450 60 
+F3 "prb1_rs_ctrl" I R 3600 3550 60 
+F4 "prb2_rs_ctrl" I R 3600 3850 60 
+F5 "prb2_pwr_ctrl" I R 3600 4150 60 
+F6 "vaisala_rs485_a" I R 3600 3650 60 
+F7 "vaisala_rs485_b" I R 3600 3750 60 
 $EndSheet
 $Sheet
-S 1700 4950 900  650 
+S 3000 5300 900  650 
 U 59819805
 F0 "PT module interface" 60
 F1 "pt-module-interface.sch" 60
-F2 "prb-pwr-btn" I R 2600 5050 60 
-F3 "prb-rs-btn" I R 2600 5200 60 
-F4 "prb-pwr-led-in" I R 2600 5350 60 
-F5 "prb-rs-led-in" I R 2600 5500 60 
+F2 "prb-pwr-btn" I R 3900 5400 60 
+F3 "prb-rs-btn" I R 3900 5550 60 
+F4 "prb-pwr-led-in" I R 3900 5700 60 
+F5 "prb-rs-led-in" I R 3900 5850 60 
 $EndSheet
 $EndSCHEMATC
