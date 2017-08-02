@@ -157,17 +157,6 @@ F 3 "" H 5675 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR03
-U 1 1 597A2705
-P 7425 2225
-F 0 "#PWR03" H 7425 2075 50  0001 C CNN
-F 1 "VCC" H 7425 2375 50  0000 C CNN
-F 2 "" H 7425 2225 50  0001 C CNN
-F 3 "" H 7425 2225 50  0001 C CNN
-	1    7425 2225
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCP16331 U?
 U 1 1 597A39D8
 P 4850 4950
@@ -361,6 +350,8 @@ F 3 "" H 5400 5775 50  0001 C CNN
 	1    5400 5775
 	-1   0    0    1   
 $EndComp
+Text HLabel 7400 2200 1    60   Input ~ 0
+External_VCC
 Wire Wire Line
 	7100 2275 7100 2350
 Connection ~ 7100 2275
@@ -514,4 +505,11 @@ Wire Wire Line
 Connection ~ 5400 5650
 Wire Wire Line
 	7100 2650 7100 2975
+Wire Wire Line
+	7400 2200 7400 2250
+Wire Wire Line
+	7400 2250 7100 2250
+Wire Wire Line
+	7100 2250 7100 2300
+Connection ~ 7100 2300
 $EndSCHEMATC
