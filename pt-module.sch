@@ -85,28 +85,31 @@ F5 "UART1_TX" I L 4100 3100 60
 F6 "UART1_RX" I L 4100 2950 60 
 F7 "UART1_CTS" I L 4100 3250 60 
 F8 "UART1_RTS" I L 4100 3400 60 
+F9 "UART2_RX" I R 5350 3750 60 
+F10 "UART2_TX" I R 5350 3600 60 
+F11 "UART2_de" O R 5350 3900 60 
 $EndSheet
 $Sheet
-S 3950 4600 1000 1050
+S 2950 5000 1000 1050
 U 598183C5
 F0 "Probe module" 60
 F1 "probe_module.sch" 60
-F2 "prb1_pwr_ctrl" I R 4950 4700 60 
-F3 "prb1_rs_ctrl" I R 4950 4800 60 
-F4 "prb2_rs_ctrl" I R 4950 5100 60 
-F5 "prb2_pwr_ctrl" I R 4950 5400 60 
-F6 "vaisala_rs485_a" I R 4950 4900 60 
-F7 "vaisala_rs485_b" I R 4950 5000 60 
+F2 "prb1_pwr_ctrl" I R 3950 5100 60 
+F3 "prb1_rs_ctrl" I R 3950 5200 60 
+F4 "prb2_rs_ctrl" I R 3950 5500 60 
+F5 "prb2_pwr_ctrl" I R 3950 5800 60 
+F6 "vaisala_rs485_a" I R 3950 5300 60 
+F7 "vaisala_rs485_b" I R 3950 5400 60 
 $EndSheet
 $Sheet
-S 2550 5950 900  650 
+S 1550 6350 900  650 
 U 59819805
 F0 "PT module interface" 60
 F1 "pt-module-interface.sch" 60
-F2 "prb-pwr-btn" I R 3450 6050 60 
-F3 "prb-rs-btn" I R 3450 6200 60 
-F4 "prb-pwr-led-in" I R 3450 6350 60 
-F5 "prb-rs-led-in" I R 3450 6500 60 
+F2 "prb-pwr-btn" I R 2450 6450 60 
+F3 "prb-rs-btn" I R 2450 6600 60 
+F4 "prb-pwr-led-in" I R 2450 6750 60 
+F5 "prb-rs-led-in" I R 2450 6900 60 
 $EndSheet
 $Comp
 L CONN_01X05 J?
@@ -395,13 +398,13 @@ F 3 "" H 1000 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Sheet
-S 8050 3950 950  350 
+S 8000 4750 950  350 
 U 5987986D
 F0 "PT module termination" 60
 F1 "pt-module-termination.sch" 60
-F2 "vaisala_rs485_a" I R 9000 4000 60 
-F3 "vaisala_rs485_b" I R 9000 4100 60 
-F4 "termination_logic" I R 9000 4200 60 
+F2 "vaisala_rs485_a" I R 8950 4800 60 
+F3 "vaisala_rs485_b" I R 8950 4900 60 
+F4 "termination_logic" I R 8950 5000 60 
 $EndSheet
 $Sheet
 S 750  3400 1050 1150
@@ -441,4 +444,22 @@ Wire Wire Line
 	2950 3400 2950 4000
 Wire Wire Line
 	2950 4000 1800 4000
+Wire Wire Line
+	8400 2100 8550 2100
+Wire Wire Line
+	8550 2100 8550 3600
+Wire Wire Line
+	8550 3600 5350 3600
+Wire Wire Line
+	5350 3750 8650 3750
+Wire Wire Line
+	8650 3750 8650 1950
+Wire Wire Line
+	8650 1950 8400 1950
+Wire Wire Line
+	5350 3900 8850 3900
+Wire Wire Line
+	8850 3900 8850 1650
+Wire Wire Line
+	8850 1650 8400 1650
 $EndSCHEMATC

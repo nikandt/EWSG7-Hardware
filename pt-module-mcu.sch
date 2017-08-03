@@ -397,4 +397,10 @@ Text HLabel 9950 3150 2    60   Input ~ 0
 UART1_CTS
 Text HLabel 9950 3250 2    60   Input ~ 0
 UART1_RTS
+Text HLabel 9950 2350 2    60   Input ~ 0
+UART2_RX
+Text HLabel 9950 2250 2    60   Input ~ 0
+UART2_TX
+Text HLabel 9950 2150 2    60   Output ~ 0
+UART2_de
 $EndSCHEMATC
