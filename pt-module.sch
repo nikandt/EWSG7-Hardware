@@ -78,31 +78,35 @@ S 4100 2800 1250 1350
 U 5980766A
 F0 "PT module MCU" 60
 F1 "pt-module-mcu.sch" 60
-F2 "UART3_tx" O R 5350 3650 60 
+F2 "UART3_tx" O R 5350 3450 60 
 F3 "UART3_rx" I R 5350 2950 60 
 F4 "UART3_de" O R 5350 3300 60 
+F5 "UART1_TX" I L 4100 3100 60 
+F6 "UART1_RX" I L 4100 2950 60 
+F7 "UART1_CTS" I L 4100 3250 60 
+F8 "UART1_RTS" I L 4100 3400 60 
 $EndSheet
 $Sheet
-S 2600 3350 1000 1050
+S 3950 4600 1000 1050
 U 598183C5
 F0 "Probe module" 60
 F1 "probe_module.sch" 60
-F2 "prb1_pwr_ctrl" I R 3600 3450 60 
-F3 "prb1_rs_ctrl" I R 3600 3550 60 
-F4 "prb2_rs_ctrl" I R 3600 3850 60 
-F5 "prb2_pwr_ctrl" I R 3600 4150 60 
-F6 "vaisala_rs485_a" I R 3600 3650 60 
-F7 "vaisala_rs485_b" I R 3600 3750 60 
+F2 "prb1_pwr_ctrl" I R 4950 4700 60 
+F3 "prb1_rs_ctrl" I R 4950 4800 60 
+F4 "prb2_rs_ctrl" I R 4950 5100 60 
+F5 "prb2_pwr_ctrl" I R 4950 5400 60 
+F6 "vaisala_rs485_a" I R 4950 4900 60 
+F7 "vaisala_rs485_b" I R 4950 5000 60 
 $EndSheet
 $Sheet
-S 3000 5300 900  650 
+S 2550 5950 900  650 
 U 59819805
 F0 "PT module interface" 60
 F1 "pt-module-interface.sch" 60
-F2 "prb-pwr-btn" I R 3900 5400 60 
-F3 "prb-rs-btn" I R 3900 5550 60 
-F4 "prb-pwr-led-in" I R 3900 5700 60 
-F5 "prb-rs-led-in" I R 3900 5850 60 
+F2 "prb-pwr-btn" I R 3450 6050 60 
+F3 "prb-rs-btn" I R 3450 6200 60 
+F4 "prb-pwr-led-in" I R 3450 6350 60 
+F5 "prb-rs-led-in" I R 3450 6500 60 
 $EndSheet
 $Comp
 L CONN_01X05 J?
@@ -319,11 +323,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 1650 7200 1650
 Wire Wire Line
-	5350 3650 6500 3650
-Wire Wire Line
-	6500 3650 6500 2100
-Wire Wire Line
-	6500 2100 7200 2100
+	6400 2100 7200 2100
 Text Label 2150 2000 0    60   ~ 0
 E_VCC
 Text Label 1750 2800 2    60   ~ 0
@@ -404,9 +404,41 @@ F3 "vaisala_rs485_b" I R 9000 4100 60
 F4 "termination_logic" I R 9000 4200 60 
 $EndSheet
 $Sheet
-S 5400 4550 600  550 
+S 750  3400 1050 1150
 U 59836BB9
 F0 "PT module USB interface" 60
 F1 "pt-module-usb-interface.sch" 60
+F2 "USB_UART_TXD" I R 1800 3550 60 
+F3 "USB_UART_RXD" I R 1800 3700 60 
+F4 "USB_UART_RTS" I R 1800 3850 60 
+F5 "USB_UART_CTS" I R 1800 4000 60 
 $EndSheet
+Wire Wire Line
+	6400 2100 6400 3450
+Wire Wire Line
+	6400 3450 5350 3450
+Wire Wire Line
+	2500 2950 4100 2950
+Wire Wire Line
+	2500 2950 2500 3550
+Wire Wire Line
+	2500 3550 1800 3550
+Wire Wire Line
+	4100 3100 2650 3100
+Wire Wire Line
+	2650 3100 2650 3700
+Wire Wire Line
+	2650 3700 1800 3700
+Wire Wire Line
+	4100 3250 2800 3250
+Wire Wire Line
+	2800 3250 2800 3850
+Wire Wire Line
+	2800 3850 1800 3850
+Wire Wire Line
+	4100 3400 2950 3400
+Wire Wire Line
+	2950 3400 2950 4000
+Wire Wire Line
+	2950 4000 1800 4000
 $EndSCHEMATC

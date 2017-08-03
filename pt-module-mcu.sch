@@ -326,10 +326,6 @@ Text HLabel 9950 4550 2    60   Input ~ 0
 UART3_rx
 Text HLabel 9950 5150 2    60   Output ~ 0
 UART3_de
-Text Label 9950 3150 0    60   ~ 0
-USB_DM
-Text Label 9950 3250 0    60   ~ 0
-USB_DP
 Connection ~ 6050 1650
 Wire Wire Line
 	1850 2250 1750 2250
@@ -393,4 +389,12 @@ Wire Wire Line
 	5800 1000 5800 900 
 Connection ~ 5800 1000
 Connection ~ 6800 1200
+Text HLabel 9950 4350 2    60   Input ~ 0
+UART1_TX
+Text HLabel 9950 4450 2    60   Input ~ 0
+UART1_RX
+Text HLabel 9950 3150 2    60   Input ~ 0
+UART1_CTS
+Text HLabel 9950 3250 2    60   Input ~ 0
+UART1_RTS
 $EndSCHEMATC
