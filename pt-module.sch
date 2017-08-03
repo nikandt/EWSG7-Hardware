@@ -88,6 +88,7 @@ F8 "UART1_RTS" I L 4100 3400 60
 F9 "UART2_RX" I R 5350 3750 60 
 F10 "UART2_TX" I R 5350 3600 60 
 F11 "UART2_de" O R 5350 3900 60 
+F12 "BUS_TERM_CTRL" I R 5350 4050 60 
 $EndSheet
 $Sheet
 S 2950 5000 1000 1050
@@ -313,6 +314,20 @@ F 3 "" H 1950 2700 50  0001 C CNN
 	1    1950 2700
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	5350 3300 6200 3300
+Wire Wire Line
+	6200 3300 6200 1950
+Wire Wire Line
+	6200 1950 7200 1950
+Wire Wire Line
+	5350 2950 6000 2950
+Wire Wire Line
+	6000 2950 6000 1650
+Wire Wire Line
+	6000 1650 7200 1650
+Wire Wire Line
+	6400 2100 7200 2100
 Text Label 2150 2000 0    60   ~ 0
 E_VCC
 Text Label 1750 2800 2    60   ~ 0
@@ -384,13 +399,13 @@ F 3 "" H 1000 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Sheet
-S 8000 4750 950  350 
+S 6100 4400 950  350 
 U 5987986D
 F0 "PT module termination" 60
 F1 "pt-module-termination.sch" 60
-F2 "vaisala_rs485_a" I R 8950 4800 60 
-F3 "vaisala_rs485_b" I R 8950 4900 60 
-F4 "termination_logic" I R 8950 5000 60 
+F2 "vaisala_rs485_a" I R 7050 4450 60 
+F3 "vaisala_rs485_b" I R 7050 4550 60 
+F4 "termination_logic" I L 6100 4650 60 
 $EndSheet
 $Sheet
 S 750  3400 1050 1150
@@ -402,20 +417,6 @@ F3 "USB_UART_RXD" I R 1800 3700 60
 F4 "USB_UART_RTS" I R 1800 3850 60 
 F5 "USB_UART_CTS" I R 1800 4000 60 
 $EndSheet
-Wire Wire Line
-	5350 3300 6200 3300
-Wire Wire Line
-	6200 3300 6200 1950
-Wire Wire Line
-	6200 1950 7200 1950
-Wire Wire Line
-	5350 2950 6000 2950
-Wire Wire Line
-	6000 2950 6000 1650
-Wire Wire Line
-	6000 1650 7200 1650
-Wire Wire Line
-	6400 2100 7200 2100
 Wire Wire Line
 	6400 2100 6400 3450
 Wire Wire Line
@@ -462,4 +463,10 @@ Wire Wire Line
 	8850 3900 8850 1650
 Wire Wire Line
 	8850 1650 8400 1650
+Wire Wire Line
+	5350 4050 5900 4050
+Wire Wire Line
+	5900 4050 5900 4650
+Wire Wire Line
+	5900 4650 6100 4650
 $EndSCHEMATC
