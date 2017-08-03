@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "ProbeTester Module"
 Date ""
 Rev ""
@@ -162,17 +162,6 @@ F 2 "" H 800 1250 50  0001 C CNN
 F 3 "" H 800 1250 50  0001 C CNN
 	1    800  1250
 	-1   0    0    1   
-$EndComp
-$Comp
-L VCC #PWR?
-U 1 1 5982A533
-P 1000 1450
-F 0 "#PWR?" H 1000 1300 50  0001 C CNN
-F 1 "VCC" H 1000 1600 50  0000 C CNN
-F 2 "" H 1000 1450 50  0001 C CNN
-F 3 "" H 1000 1450 50  0001 C CNN
-	1    1000 1450
-	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR?
@@ -393,4 +382,24 @@ F 3 "" H 2150 2700 50  0001 C CNN
 	1    2150 2700
 	0    1    1    0   
 $EndComp
+$Comp
+L VEE #PWR?
+U 1 1 59866A46
+P 1000 1450
+F 0 "#PWR?" H 1000 1300 50  0001 C CNN
+F 1 "VEE" H 1000 1600 50  0000 C CNN
+F 2 "" H 1000 1450 50  0001 C CNN
+F 3 "" H 1000 1450 50  0001 C CNN
+	1    1000 1450
+	0    1    1    0   
+$EndComp
+$Sheet
+S 8050 3950 950  350 
+U 5987986D
+F0 "PT module termination" 60
+F1 "pt-module-termination.sch" 60
+F2 "vaisala_rs485_a" I R 9000 4000 60 
+F3 "vaisala_rs485_b" I R 9000 4100 60 
+F4 "termination_logic" I R 9000 4200 60 
+$EndSheet
 $EndSCHEMATC
