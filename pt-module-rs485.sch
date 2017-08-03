@@ -31,12 +31,13 @@ LIBS:valves
 LIBS:stm32
 LIBS:switches
 LIBS:ESD_Protection
+LIBS:ftdi
 LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title "ProbeTester Module RS485"
 Date "29.7.2017"
 Rev "0.1"

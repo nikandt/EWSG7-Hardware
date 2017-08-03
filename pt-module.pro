@@ -1,4 +1,4 @@
-update=8/2/2017 9:37:15 AM
+update=8/3/2017 9:30:09 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,4 @@ LibName29=valves
 LibName30=stm32
 LibName31=switches
 LibName32=ESD_Protection
+LibName33=ftdi

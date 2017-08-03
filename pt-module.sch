@@ -31,12 +31,13 @@ LIBS:valves
 LIBS:stm32
 LIBS:switches
 LIBS:ESD_Protection
+LIBS:ftdi
 LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "ProbeTester Module"
 Date ""
 Rev ""
@@ -401,5 +402,11 @@ F1 "pt-module-termination.sch" 60
 F2 "vaisala_rs485_a" I R 9000 4000 60 
 F3 "vaisala_rs485_b" I R 9000 4100 60 
 F4 "termination_logic" I R 9000 4200 60 
+$EndSheet
+$Sheet
+S 5400 4550 600  550 
+U 59836BB9
+F0 "PT module USB interface" 60
+F1 "pt-module-usb-interface.sch" 60
 $EndSheet
 $EndSCHEMATC
