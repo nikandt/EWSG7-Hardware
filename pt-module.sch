@@ -313,20 +313,6 @@ F 3 "" H 1950 2700 50  0001 C CNN
 	1    1950 2700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5350 3300 6200 3300
-Wire Wire Line
-	6200 3300 6200 1950
-Wire Wire Line
-	6200 1950 7200 1950
-Wire Wire Line
-	5350 2950 6000 2950
-Wire Wire Line
-	6000 2950 6000 1650
-Wire Wire Line
-	6000 1650 7200 1650
-Wire Wire Line
-	6400 2100 7200 2100
 Text Label 2150 2000 0    60   ~ 0
 E_VCC
 Text Label 1750 2800 2    60   ~ 0
@@ -416,6 +402,20 @@ F3 "USB_UART_RXD" I R 1800 3700 60
 F4 "USB_UART_RTS" I R 1800 3850 60 
 F5 "USB_UART_CTS" I R 1800 4000 60 
 $EndSheet
+Wire Wire Line
+	5350 3300 6200 3300
+Wire Wire Line
+	6200 3300 6200 1950
+Wire Wire Line
+	6200 1950 7200 1950
+Wire Wire Line
+	5350 2950 6000 2950
+Wire Wire Line
+	6000 2950 6000 1650
+Wire Wire Line
+	6000 1650 7200 1650
+Wire Wire Line
+	6400 2100 7200 2100
 Wire Wire Line
 	6400 2100 6400 3450
 Wire Wire Line
