@@ -192,8 +192,6 @@ F 3 "" H 4950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 4650 6550 4650
-Wire Wire Line
 	5400 5500 5400 5650
 Wire Wire Line
 	3800 5250 3800 5400
@@ -238,8 +236,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 2850 6550 2850
 Wire Wire Line
-	6550 2850 6550 4650
-Connection ~ 5400 4650
+	6550 2850 6550 5150
 Connection ~ 4950 2950
 Wire Wire Line
 	4950 3300 4950 3500
@@ -273,4 +270,9 @@ Text HLabel 6450 2550 2    60   Input ~ 0
 USB_UART_RTS
 Text HLabel 6450 2650 2    60   Input ~ 0
 USB_UART_CTS
+Wire Wire Line
+	5400 4650 4100 4650
+Wire Wire Line
+	6550 5150 5400 5150
+Connection ~ 5400 5150
 $EndSCHEMATC
