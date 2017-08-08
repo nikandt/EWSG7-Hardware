@@ -1,4 +1,4 @@
-update=8/3/2017 9:30:09 AM
+update=8/8/2017 4:13:19 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=stm32
 LibName31=switches
 LibName32=ESD_Protection
 LibName33=ftdi
+LibName34=relays

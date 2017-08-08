@@ -32,6 +32,7 @@ LIBS:stm32
 LIBS:switches
 LIBS:ESD_Protection
 LIBS:ftdi
+LIBS:relays
 LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
@@ -117,44 +118,11 @@ F 3 "" H 4650 4450 60  0001 C CNN
 	2    4650 4450
 	1    0    0    -1  
 $EndComp
-$Comp
-L VCC #PWR?
-U 1 1 5981C322
-P 2900 1900
-F 0 "#PWR?" H 2900 1750 50  0001 C CNN
-F 1 "VCC" H 2900 2050 50  0000 C CNN
-F 2 "" H 2900 1900 50  0001 C CNN
-F 3 "" H 2900 1900 50  0001 C CNN
-	1    2900 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 5981C485
-P 3000 2650
-F 0 "#PWR?" H 3000 2400 50  0001 C CNN
-F 1 "GND" H 3000 2500 50  0000 C CNN
-F 2 "" H 3000 2650 50  0001 C CNN
-F 3 "" H 3000 2650 50  0001 C CNN
-	1    3000 2650
-	1    0    0    -1  
-$EndComp
 Text Label 3100 1900 3    60   ~ 0
 prb1_a
 Text Label 3200 1900 3    60   ~ 0
 prb1_b
-$Comp
-L Q_NMOS_DGS Q?
-U 1 1 5981CE0A
-P 2900 2450
-F 0 "Q?" H 3100 2500 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 3100 2400 50  0000 L CNN
-F 2 "" H 3100 2550 50  0001 C CNN
-F 3 "" H 2900 2450 50  0001 C CNN
-	1    2900 2450
-	1    0    0    -1  
-$EndComp
-Text HLabel 2700 2450 0    60   Input ~ 0
+Text HLabel 5300 3150 3    60   Input ~ 0
 prb1_pwr_ctrl
 Text HLabel 1850 4350 0    60   Input ~ 0
 prb1_rs_ctrl
@@ -164,8 +132,6 @@ Text HLabel 4200 4350 0    60   Input ~ 0
 prb1_rs_ctrl
 Text HLabel 5100 4550 2    60   Input ~ 0
 vaisala_rs485_b
-Wire Wire Line
-	3000 1900 3000 2250
 $Comp
 L DG411 U?
 U 1 1 5981EAC3
@@ -256,47 +222,8 @@ F 3 "" H 3100 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 3300 1900
-$Comp
-L VCC #PWR?
-U 1 1 59821852
-P 7800 1800
-F 0 "#PWR?" H 7800 1650 50  0001 C CNN
-F 1 "VCC" H 7800 1950 50  0000 C CNN
-F 2 "" H 7800 1800 50  0001 C CNN
-F 3 "" H 7800 1800 50  0001 C CNN
-	1    7800 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 59821858
-P 7900 2550
-F 0 "#PWR?" H 7900 2300 50  0001 C CNN
-F 1 "GND" H 7900 2400 50  0000 C CNN
-F 2 "" H 7900 2550 50  0001 C CNN
-F 3 "" H 7900 2550 50  0001 C CNN
-	1    7900 2550
-	1    0    0    -1  
-$EndComp
-Text Label 8000 1800 3    60   ~ 0
-prb1_a
-Text Label 8100 1800 3    60   ~ 0
-prb1_b
-$Comp
-L Q_NMOS_DGS Q?
-U 1 1 59821860
-P 7800 2350
-F 0 "Q?" H 8000 2400 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 8000 2300 50  0000 L CNN
-F 2 "" H 8000 2450 50  0001 C CNN
-F 3 "" H 7800 2350 50  0001 C CNN
-	1    7800 2350
-	1    0    0    -1  
-$EndComp
-Text HLabel 7600 2350 0    60   Input ~ 0
+Text HLabel 5700 3150 3    60   Input ~ 0
 prb2_pwr_ctrl
-Wire Wire Line
-	7900 1800 7900 2150
 $Comp
 L CONN_01X05 J?
 U 1 1 59821868
@@ -309,4 +236,114 @@ F 3 "" H 8000 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 8200 1800
+$Comp
+L GND #PWR?
+U 1 1 5990A260
+P 5500 3150
+F 0 "#PWR?" H 5500 2900 50  0001 C CNN
+F 1 "GND" H 5500 3000 50  0000 C CNN
+F 2 "" H 5500 3150 50  0001 C CNN
+F 3 "" H 5500 3150 50  0001 C CNN
+	1    5500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5990A28D
+P 5900 3150
+F 0 "#PWR?" H 5900 2900 50  0001 C CNN
+F 1 "GND" H 5900 3000 50  0000 C CNN
+F 2 "" H 5900 3150 50  0001 C CNN
+F 3 "" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+Text Label 8100 1800 3    60   ~ 0
+prb2_b
+Text Label 8000 1800 3    60   ~ 0
+prb2_a
+$Comp
+L GND #PWR?
+U 1 1 5990A7F8
+P 7900 2150
+F 0 "#PWR?" H 7900 1900 50  0001 C CNN
+F 1 "GND" H 7900 2000 50  0000 C CNN
+F 2 "" H 7900 2150 50  0001 C CNN
+F 3 "" H 7900 2150 50  0001 C CNN
+	1    7900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5990A9E7
+P 3000 2250
+F 0 "#PWR?" H 3000 2000 50  0001 C CNN
+F 1 "GND" H 3000 2100 50  0000 C CNN
+F 2 "" H 3000 2250 50  0001 C CNN
+F 3 "" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 5990AB6A
+P 5300 1800
+F 0 "#PWR?" H 5300 1650 50  0001 C CNN
+F 1 "VCC" H 5300 1950 50  0000 C CNN
+F 2 "" H 5300 1800 50  0001 C CNN
+F 3 "" H 5300 1800 50  0001 C CNN
+	1    5300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 5990AB9B
+P 5700 1800
+F 0 "#PWR?" H 5700 1650 50  0001 C CNN
+F 1 "VCC" H 5700 1950 50  0000 C CNN
+F 2 "" H 5700 1800 50  0001 C CNN
+F 3 "" H 5700 1800 50  0001 C CNN
+	1    5700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1900 3000 2250
+Wire Wire Line
+	5300 2550 5300 3150
+Wire Wire Line
+	5500 2550 5500 3150
+Wire Wire Line
+	5700 2550 5700 3150
+Wire Wire Line
+	5900 2550 5900 3150
+Wire Wire Line
+	7900 1800 7900 2150
+Wire Wire Line
+	5300 1800 5300 2300
+Wire Wire Line
+	5700 1800 5700 2300
+Text Label 2450 1850 0    60   ~ 0
+prb1_v
+Wire Wire Line
+	2450 1850 2450 2100
+Wire Wire Line
+	2450 2100 2900 2100
+Wire Wire Line
+	2900 2100 2900 1900
+Text Label 7150 1800 0    60   ~ 0
+prb2_v
+Wire Wire Line
+	7150 1800 7150 2000
+Wire Wire Line
+	7150 2000 7800 2000
+Wire Wire Line
+	7800 2000 7800 1800
+Text Label 5500 1700 1    60   ~ 0
+prb1_v
+Wire Wire Line
+	5500 1700 5500 2300
+Text Label 5900 1700 1    60   ~ 0
+prb2_v
+Wire Wire Line
+	5900 1700 5900 2300
 $EndSCHEMATC
