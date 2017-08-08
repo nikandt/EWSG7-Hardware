@@ -76,16 +76,16 @@ F12 "Ac" I L 7200 2400 60
 F13 "Bc" I L 7200 2550 60 
 $EndSheet
 $Sheet
-S 5850 3750 1000 700 
+S 7400 3850 1000 700 
 U 598183C5
 F0 "Probe module" 60
 F1 "probe_module.sch" 60
-F2 "prb1_pwr_ctrl" I L 5850 3850 60 
-F3 "prb1_rs_ctrl" I L 5850 3950 60 
-F4 "prb2_rs_ctrl" I L 5850 4050 60 
-F5 "prb2_pwr_ctrl" I L 5850 4150 60 
-F6 "vaisala_rs485_a" I R 6850 4350 60 
-F7 "vaisala_rs485_b" I R 6850 4250 60 
+F2 "prb1_pwr_ctrl" I L 7400 3950 60 
+F3 "prb1_rs_ctrl" I L 7400 4050 60 
+F4 "prb2_rs_ctrl" I L 7400 4150 60 
+F5 "prb2_pwr_ctrl" I L 7400 4250 60 
+F6 "vaisala_rs485_a" I R 8400 4450 60 
+F7 "vaisala_rs485_b" I R 8400 4350 60 
 $EndSheet
 $Sheet
 S 600  4400 800  500 
@@ -619,4 +619,16 @@ Wire Wire Line
 	3500 7300 3700 7300
 Wire Wire Line
 	3700 7300 3700 4950
+$Sheet
+S 7400 4800 1000 700 
+U 59933B07
+F0 "Probe module" 60
+F1 "probe_module.sch" 60
+F2 "prb3_pwr_ctrl" I L 7400 4900 60 
+F3 "prb3_rs_ctrl" I L 7400 5000 60 
+F4 "prb4_rs_ctrl" I L 7400 5100 60 
+F5 "prb4_pwr_ctrl" I L 7400 5200 60 
+F6 "vaisala_rs485_a" I R 8400 5400 60 
+F7 "vaisala_rs485_b" I R 8400 5300 60 
+$EndSheet
 $EndSCHEMATC
