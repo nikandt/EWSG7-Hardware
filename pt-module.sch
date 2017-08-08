@@ -90,10 +90,10 @@ S 600  4400 800  500
 U 59819805
 F0 "PT module interface" 60
 F1 "pt-module-interface.sch" 60
-F2 "prb_pwr_btn" I R 1400 4500 60 
-F3 "prb_pwr_led_in" I R 1400 4700 60 
-F4 "prb_rs_btn" I R 1400 4600 60 
-F5 "prb_rs_led_in" I R 1400 4800 60 
+F2 "prb1_pwr_btn" I R 1400 4500 60 
+F3 "prb1_pwr_led_in" I R 1400 4700 60 
+F4 "prb1_rs_btn" I R 1400 4600 60 
+F5 "prb1_rs_led_in" I R 1400 4800 60 
 $EndSheet
 $Comp
 L CONN_01X05 J?
@@ -391,20 +391,20 @@ S 600  5100 800  500
 U 598B38EB
 F0 "PT module interface" 60
 F1 "pt-module-interface.sch" 60
-F2 "prb_pwr_btn" I R 1400 5200 60 
-F3 "prb_pwr_led_in" I R 1400 5400 60 
-F4 "prb_rs_btn" I R 1400 5300 60 
-F5 "prb_rs_led_in" I R 1400 5500 60 
+F2 "prb2_pwr_btn" I R 1400 5200 60 
+F3 "prb2_pwr_led_in" I R 1400 5400 60 
+F4 "prb2_rs_btn" I R 1400 5300 60 
+F5 "prb2_rs_led_in" I R 1400 5500 60 
 $EndSheet
 $Sheet
 S 600  5800 800  500 
 U 598B3EA9
 F0 "PT module interface" 60
 F1 "pt-module-interface.sch" 60
-F2 "prb_pwr_btn" I R 1400 5900 60 
-F3 "prb_pwr_led_in" I R 1400 6100 60 
-F4 "prb_rs_btn" I R 1400 6000 60 
-F5 "prb_rs_led_in" I R 1400 6200 60 
+F2 "prb3_pwr_btn" I R 1400 5900 60 
+F3 "prb3_pwr_led_in" I R 1400 6100 60 
+F4 "prb3_rs_btn" I R 1400 6000 60 
+F5 "prb3_rs_led_in" I R 1400 6200 60 
 $EndSheet
 $Sheet
 S 4100 2800 1350 2450
@@ -596,10 +596,10 @@ S 600  6500 800  500
 U 598B41A3
 F0 "PT module interface" 60
 F1 "pt-module-interface.sch" 60
-F2 "prb_pwr_btn" I R 1400 6600 60 
-F3 "prb_pwr_led_in" I R 1400 6800 60 
-F4 "prb_rs_btn" I R 1400 6700 60 
-F5 "prb_rs_led_in" I R 1400 6900 60 
+F2 "prb4_pwr_btn" I R 1400 6600 60 
+F3 "prb4_pwr_led_in" I R 1400 6800 60 
+F4 "prb4_rs_btn" I R 1400 6700 60 
+F5 "prb4_rs_led_in" I R 1400 6900 60 
 $EndSheet
 Wire Wire Line
 	1400 6800 3350 6800
