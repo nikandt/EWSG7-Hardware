@@ -74,16 +74,16 @@ F12 "Ac" I L 7200 2400 60
 F13 "Bc" I L 7200 2550 60 
 $EndSheet
 $Sheet
-S 7100 4650 1000 1050
+S 5850 3750 1000 700 
 U 598183C5
 F0 "Probe module" 60
 F1 "probe_module.sch" 60
-F2 "prb1_pwr_ctrl" I R 8100 4750 60 
-F3 "prb1_rs_ctrl" I R 8100 4850 60 
-F4 "prb2_rs_ctrl" I R 8100 5150 60 
-F5 "prb2_pwr_ctrl" I R 8100 5450 60 
-F6 "vaisala_rs485_a" I R 8100 4950 60 
-F7 "vaisala_rs485_b" I R 8100 5050 60 
+F2 "prb1_pwr_ctrl" I L 5850 3850 60 
+F3 "prb1_rs_ctrl" I L 5850 3950 60 
+F4 "prb2_rs_ctrl" I L 5850 4050 60 
+F5 "prb2_pwr_ctrl" I L 5850 4150 60 
+F6 "vaisala_rs485_a" I R 6850 4350 60 
+F7 "vaisala_rs485_b" I R 6850 4250 60 
 $EndSheet
 $Sheet
 S 600  4400 800  500 
