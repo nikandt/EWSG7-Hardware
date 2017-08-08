@@ -33,12 +33,11 @@ LIBS:switches
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:relays
-LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 12
+Sheet 10 12
 Title ""
 Date ""
 Rev ""
@@ -291,10 +290,10 @@ Connection ~ 6150 1650
 Connection ~ 6250 1650
 Connection ~ 6350 1650
 Wire Wire Line
-	6800 1200 6800 1650
+	6800 1650 6800 1200
 Connection ~ 6450 1650
 Wire Wire Line
-	5800 1200 6800 1200
+	6800 1200 5800 1200
 Connection ~ 6600 1200
 Connection ~ 6400 1200
 Connection ~ 6200 1200

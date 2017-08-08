@@ -33,7 +33,6 @@ LIBS:switches
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:relays
-LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -346,4 +345,5 @@ Text Label 5900 1700 1    60   ~ 0
 prb2_v
 Wire Wire Line
 	5900 1700 5900 2300
+NoConn ~ 5800 2300
 $EndSCHEMATC
