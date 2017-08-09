@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 12
+Sheet 6 13
 Title ""
 Date ""
 Rev ""
@@ -49,32 +49,70 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3200 2350 0    60   Input ~ 0
+Text HLabel 6300 3350 2    60   Input ~ 0
 vaisala_rs485_a
-Text HLabel 3900 2350 2    60   Input ~ 0
+Text HLabel 6300 3150 2    60   Input ~ 0
 vaisala_rs485_b
 $Comp
-L Q_NMOS_DGS Q?
-U 1 1 5987C0B5
-P 3400 2450
-F 0 "Q?" H 3600 2500 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 3600 2400 50  0000 L CNN
-F 2 "" H 3600 2550 50  0001 C CNN
-F 3 "" H 3400 2450 50  0001 C CNN
-	1    3400 2450
+L R 120R
+U 1 1 5987C0FF
+P 6150 3150
+F 0 "120R" V 6230 3150 50  0000 C CNN
+F 1 "R" V 6150 3150 50  0000 C CNN
+F 2 "" V 6080 3150 50  0001 C CNN
+F 3 "" H 6150 3150 50  0001 C CNN
+	1    6150 3150
 	0    -1   -1   0   
 $EndComp
+Text HLabel 4800 3250 0    60   Input ~ 0
+termination_logic
 $Comp
-L R R?
-U 1 1 5987C0FF
-P 3750 2350
-F 0 "R?" V 3830 2350 50  0000 C CNN
-F 1 "R" V 3750 2350 50  0000 C CNN
-F 2 "" V 3680 2350 50  0001 C CNN
-F 3 "" H 3750 2350 50  0001 C CNN
-	1    3750 2350
+L AQY282S .
+U 1 1 598B2987
+P 5850 3450
+F 0 "." H 5850 3450 60  0000 C CNN
+F 1 "AQY282S" H 5850 3450 60  0000 C CNN
+F 2 "" H 5850 3450 60  0001 C CNN
+F 3 "" H 5850 3450 60  0001 C CNN
+	1    5850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 598B2D7C
+P 5200 3450
+F 0 "#PWR?" H 5200 3200 50  0001 C CNN
+F 1 "GND" H 5200 3300 50  0000 C CNN
+F 2 "" H 5200 3450 50  0001 C CNN
+F 3 "" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 330R
+U 1 1 598B2DEE
+P 4950 3250
+F 0 "330R" V 5030 3250 50  0000 C CNN
+F 1 "R" V 4950 3250 50  0000 C CNN
+F 2 "" V 4880 3250 50  0001 C CNN
+F 3 "" H 4950 3250 50  0001 C CNN
+	1    4950 3250
 	0    1    1    0   
 $EndComp
-Text HLabel 3400 2650 3    60   Input ~ 0
-termination_logic
+Wire Wire Line
+	5350 3350 5200 3350
+Wire Wire Line
+	5200 3350 5200 3450
+Wire Wire Line
+	5350 3250 5100 3250
+Text Notes 3950 3500 0    60   ~ 0
+3.3V for closed\n0V for open
+Wire Wire Line
+	6000 3150 5900 3150
+Wire Wire Line
+	5900 3150 5900 3250
+Wire Wire Line
+	5900 3250 5800 3250
+Wire Wire Line
+	6300 3350 5800 3350
 $EndSCHEMATC
