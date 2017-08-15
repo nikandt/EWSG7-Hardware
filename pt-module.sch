@@ -33,6 +33,13 @@ LIBS:switches
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:relays
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
 LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
@@ -97,10 +104,10 @@ F4 "prb1_rs_btn" I R 1400 4600 60
 F5 "prb1_rs_led_in" I R 1400 4800 60 
 $EndSheet
 $Comp
-L CONN_01X05 J?
+L CONN_01X05 J4
 U 1 1 59820FE7
 P 10850 1050
-F 0 "J?" H 10850 1350 50  0000 C CNN
+F 0 "J4" H 10850 1350 50  0000 C CNN
 F 1 "M12 out" V 10950 1050 50  0000 C CNN
 F 2 "" H 10850 1050 50  0001 C CNN
 F 3 "" H 10850 1050 50  0001 C CNN
@@ -135,10 +142,10 @@ Text Label 10650 1150 2    60   ~ 0
 vaisala_rs485_b
 NoConn ~ 10650 1250
 $Comp
-L CONN_01X08 J?
+L CONN_01X08 J5
 U 1 1 59829448
 P 10850 1900
-F 0 "J?" H 10850 2350 50  0000 C CNN
+F 0 "J5" H 10850 2350 50  0000 C CNN
 F 1 "Ethercon out" V 10950 1900 50  0000 C CNN
 F 2 "" H 10850 1900 50  0001 C CNN
 F 3 "" H 10850 1900 50  0001 C CNN
@@ -146,10 +153,10 @@ F 3 "" H 10850 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X05 J?
+L CONN_01X05 J1
 U 1 1 5982A52D
 P 850 1000
-F 0 "J?" H 850 1300 50  0000 C CNN
+F 0 "J1" H 850 1300 50  0000 C CNN
 F 1 "M12 in" V 950 1000 50  0000 C CNN
 F 2 "" H 850 1000 50  0001 C CNN
 F 3 "" H 850 1000 50  0001 C CNN
@@ -225,10 +232,10 @@ F 3 "" H 10650 1750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X08 J?
+L CONN_01X08 J2
 U 1 1 59840D9B
 P 850 1800
-F 0 "J?" H 850 2250 50  0000 C CNN
+F 0 "J2" H 850 2250 50  0000 C CNN
 F 1 "Ethercon out" V 950 1800 50  0000 C CNN
 F 2 "" H 850 1800 50  0001 C CNN
 F 3 "" H 850 1800 50  0001 C CNN
@@ -255,10 +262,10 @@ intermodule_rs485_a
 Text Label 1050 1550 0    60   ~ 0
 intermodule_rs485_b
 $Comp
-L CONN_01X02 J?
+L CONN_01X02 J3
 U 1 1 5984EE28
 P 850 2500
-F 0 "J?" H 850 2650 50  0000 C CNN
+F 0 "J3" H 850 2650 50  0000 C CNN
 F 1 "PWR in" V 950 2500 50  0000 C CNN
 F 2 "" H 850 2500 50  0001 C CNN
 F 3 "" H 850 2500 50  0001 C CNN
@@ -288,10 +295,10 @@ F 3 "" H 1050 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SW_DPDT_x2 SW?
+L SW_DPDT_x2 SW1
 U 1 1 5985369A
 P 2000 2300
-F 0 "SW?" H 2000 2470 50  0000 C CNN
+F 0 "SW1" H 2000 2470 50  0000 C CNN
 F 1 "pwr-source switch" H 2000 2100 50  0000 C CNN
 F 2 "" H 2000 2300 50  0001 C CNN
 F 3 "" H 2000 2300 50  0001 C CNN
@@ -390,8 +397,8 @@ $EndSheet
 $Sheet
 S 600  5100 800  500 
 U 598B38EB
-F0 "PT module interface" 60
-F1 "pt-module-interface.sch" 60
+F0 "PT module interface 2" 60
+F1 "pt-module-interface2.sch" 60
 F2 "prb2_pwr_btn" I R 1400 5200 60 
 F3 "prb2_pwr_led_in" I R 1400 5400 60 
 F4 "prb2_rs_btn" I R 1400 5300 60 
@@ -400,8 +407,8 @@ $EndSheet
 $Sheet
 S 600  5800 800  500 
 U 598B3EA9
-F0 "PT module interface" 60
-F1 "pt-module-interface.sch" 60
+F0 "PT module interface 3" 60
+F1 "pt-module-interface3.sch" 60
 F2 "prb3_pwr_btn" I R 1400 5900 60 
 F3 "prb3_pwr_led_in" I R 1400 6100 60 
 F4 "prb3_rs_btn" I R 1400 6000 60 
@@ -461,8 +468,8 @@ $EndSheet
 $Sheet
 S 600  6500 800  500 
 U 598B41A3
-F0 "PT module interface" 60
-F1 "pt-module-interface.sch" 60
+F0 "PT module interface 4" 60
+F1 "pt-module-interface4.sch" 60
 F2 "prb4_pwr_btn" I R 1400 6600 60 
 F3 "prb4_pwr_led_in" I R 1400 6800 60 
 F4 "prb4_rs_btn" I R 1400 6700 60 
@@ -471,8 +478,8 @@ $EndSheet
 $Sheet
 S 7350 4650 1000 700 
 U 59933B07
-F0 "Probe module" 60
-F1 "probe_module.sch" 60
+F0 "Probe module 2" 60
+F1 "probe_module2.sch" 60
 F2 "prb3_pwr_ctrl" I L 7350 4750 60 
 F3 "prb3_rs_ctrl" I L 7350 4850 60 
 F4 "prb4_rs_ctrl" I L 7350 4950 60 
@@ -694,4 +701,38 @@ Wire Wire Line
 	5550 5550 5050 5550
 Wire Wire Line
 	5050 5650 5550 5650
+Text Label 9000 2400 0    60   ~ 0
+vaisala_rs485_a
+Text Label 9000 2550 0    60   ~ 0
+vaisala_rs485_b
+Wire Wire Line
+	9000 2400 8400 2400
+Wire Wire Line
+	9000 2550 8400 2550
+Text Label 6850 3100 0    60   ~ 0
+intermodule_rs485_a
+Text Label 6850 3000 0    60   ~ 0
+intermodule_rs485_b
+Wire Wire Line
+	7200 2550 6800 2550
+Wire Wire Line
+	6800 2550 6800 3000
+Wire Wire Line
+	6800 3000 6850 3000
+Wire Wire Line
+	6850 3100 6700 3100
+Wire Wire Line
+	6700 3100 6700 2400
+Wire Wire Line
+	6700 2400 7200 2400
+Wire Wire Line
+	7200 1800 7000 1800
+Wire Wire Line
+	7000 1800 7000 1950
+Connection ~ 7000 1950
+Wire Wire Line
+	8400 1800 8600 1800
+Wire Wire Line
+	8600 1800 8600 1950
+Connection ~ 8600 1950
 $EndSCHEMATC

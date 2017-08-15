@@ -33,6 +33,13 @@ LIBS:switches
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:relays
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
 LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
@@ -53,10 +60,10 @@ vaisala_rs485_a
 Text HLabel 6300 3150 2    60   Input ~ 0
 vaisala_rs485_b
 $Comp
-L R 120R
+L R 120R1
 U 1 1 5987C0FF
 P 6150 3150
-F 0 "120R" V 6230 3150 50  0000 C CNN
+F 0 "120R1" V 6230 3150 50  0000 C CNN
 F 1 "R" V 6150 3150 50  0000 C CNN
 F 2 "" V 6080 3150 50  0001 C CNN
 F 3 "" H 6150 3150 50  0001 C CNN
@@ -66,10 +73,10 @@ $EndComp
 Text HLabel 4800 3250 0    60   Input ~ 0
 termination_logic
 $Comp
-L AQY282S .
+L AQY282S .1
 U 1 1 598B2987
 P 5850 3450
-F 0 "." H 5850 3450 60  0000 C CNN
+F 0 ".1" H 5850 3450 60  0000 C CNN
 F 1 "AQY282S" H 5850 3450 60  0000 C CNN
 F 2 "" H 5850 3450 60  0001 C CNN
 F 3 "" H 5850 3450 60  0001 C CNN
@@ -77,10 +84,10 @@ F 3 "" H 5850 3450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR061
 U 1 1 598B2D7C
 P 5200 3450
-F 0 "#PWR?" H 5200 3200 50  0001 C CNN
+F 0 "#PWR061" H 5200 3200 50  0001 C CNN
 F 1 "GND" H 5200 3300 50  0000 C CNN
 F 2 "" H 5200 3450 50  0001 C CNN
 F 3 "" H 5200 3450 50  0001 C CNN
@@ -88,10 +95,10 @@ F 3 "" H 5200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R 330R
+L R 330R1
 U 1 1 598B2DEE
 P 4950 3250
-F 0 "330R" V 5030 3250 50  0000 C CNN
+F 0 "330R1" V 5030 3250 50  0000 C CNN
 F 1 "R" V 4950 3250 50  0000 C CNN
 F 2 "" V 4880 3250 50  0001 C CNN
 F 3 "" H 4950 3250 50  0001 C CNN
