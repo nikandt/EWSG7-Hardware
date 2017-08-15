@@ -1,4 +1,4 @@
-update=8/8/2017 4:59:36 PM
+update=8/15/2017 6:09:04 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,10 @@ LibName32=ESD_Protection
 LibName33=ftdi
 LibName34=relays
 LibName35=components
+LibName36=microchip_dspic33dsc
+LibName37=microchip_pic10mcu
+LibName38=microchip_pic12mcu
+LibName39=microchip_pic16mcu
+LibName40=microchip_pic18mcu
+LibName41=microchip_pic24mcu
+LibName42=microchip_pic32mcu

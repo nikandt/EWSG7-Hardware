@@ -33,7 +33,6 @@ LIBS:switches
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:relays
-LIBS:components
 LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
@@ -76,16 +75,16 @@ F12 "Ac" I L 7200 2400 60
 F13 "Bc" I L 7200 2550 60 
 $EndSheet
 $Sheet
-S 7400 3850 1000 700 
+S 7350 3700 1000 700 
 U 598183C5
 F0 "Probe module" 60
 F1 "probe_module.sch" 60
-F2 "prb1_pwr_ctrl" I L 7400 3950 60 
-F3 "prb1_rs_ctrl" I L 7400 4050 60 
-F4 "prb2_rs_ctrl" I L 7400 4150 60 
-F5 "prb2_pwr_ctrl" I L 7400 4250 60 
-F6 "vaisala_rs485_a" I R 8400 4450 60 
-F7 "vaisala_rs485_b" I R 8400 4350 60 
+F2 "prb1_pwr_ctrl" I L 7350 3800 60 
+F3 "prb1_rs_ctrl" I L 7350 3900 60 
+F4 "prb2_rs_ctrl" I L 7350 4000 60 
+F5 "prb2_pwr_ctrl" I L 7350 4100 60 
+F6 "vaisala_rs485_a" I R 8350 4300 60 
+F7 "vaisala_rs485_b" I R 8350 4200 60 
 $EndSheet
 $Sheet
 S 600  4400 800  500 
@@ -409,20 +408,20 @@ F4 "prb3_rs_btn" I R 1400 6000 60
 F5 "prb3_rs_led_in" I R 1400 6200 60 
 $EndSheet
 $Sheet
-S 4100 2800 1350 2450
+S 4100 2800 1550 2450
 U 5980766A
 F0 "PT module MCU" 60
 F1 "pt-module-mcu.sch" 60
-F2 "UART3_tx" O R 5450 3150 60 
-F3 "UART3_rx" I R 5450 2850 60 
-F4 "UART3_de" O R 5450 3050 60 
+F2 "UART3_tx" O R 5650 3150 60 
+F3 "UART3_rx" I R 5650 2850 60 
+F4 "UART3_de" O R 5650 3050 60 
 F5 "UART1_TX" I L 4100 2950 60 
 F6 "UART1_RX" I L 4100 2850 60 
 F7 "UART1_CTS" I L 4100 3050 60 
 F8 "UART1_RTS" I L 4100 3150 60 
-F9 "UART2_RX" I R 5450 3550 60 
-F10 "UART2_TX" I R 5450 3250 60 
-F11 "UART2_de" O R 5450 3350 60 
+F9 "UART2_RX" I R 5650 3550 60 
+F10 "UART2_TX" I R 5650 3250 60 
+F11 "UART2_de" O R 5650 3350 60 
 F12 "BUS_TERM_CTRL" I L 4100 5050 60 
 F13 "prb_btn_1_pwr" I L 4100 3250 60 
 F14 "prb_btn_1_rs" I L 4100 3350 60 
@@ -442,6 +441,14 @@ F27 "prb_LED_4_pwr" I L 4100 4650 60
 F28 "prb_LED_4_rs" I L 4100 4750 60 
 F29 "prb_btn_pwr_master" I L 4100 4850 60 
 F30 "prb_btn_rs_master" I L 4100 4950 60 
+F31 "PRB_1_pwr_ctrl" I R 5650 3800 60 
+F32 "PRB_1_rs_ctrl" I R 5650 3900 60 
+F33 "PRB_2_rs_ctrl" I R 5650 4100 60 
+F34 "PRB_2_pwr_ctrl" I R 5650 4000 60 
+F35 "PRB_3_pwr_ctrl" I R 5650 4200 60 
+F36 "PRB_4_pwr_ctrl" I R 5650 4400 60 
+F37 "PRB_3_rs_ctrl" I R 5650 4300 60 
+F38 "PRB_4_rs_ctrl" I R 5650 4500 60 
 $EndSheet
 $Sheet
 S 2450 7100 1050 350 
@@ -451,8 +458,30 @@ F1 "pt-module-interface-master.sch" 60
 F2 "prb_pwr_btn_master" I R 3500 7200 60 
 F3 "prb_rs_btn_master" I R 3500 7300 60 
 $EndSheet
-Wire Wire Line
-	6200 1950 7200 1950
+$Sheet
+S 600  6500 800  500 
+U 598B41A3
+F0 "PT module interface" 60
+F1 "pt-module-interface.sch" 60
+F2 "prb4_pwr_btn" I R 1400 6600 60 
+F3 "prb4_pwr_led_in" I R 1400 6800 60 
+F4 "prb4_rs_btn" I R 1400 6700 60 
+F5 "prb4_rs_led_in" I R 1400 6900 60 
+$EndSheet
+$Sheet
+S 7350 4650 1000 700 
+U 59933B07
+F0 "Probe module" 60
+F1 "probe_module.sch" 60
+F2 "prb3_pwr_ctrl" I L 7350 4750 60 
+F3 "prb3_rs_ctrl" I L 7350 4850 60 
+F4 "prb4_rs_ctrl" I L 7350 4950 60 
+F5 "prb4_pwr_ctrl" I L 7350 5050 60 
+F6 "vaisala_rs485_a" I R 8350 5250 60 
+F7 "vaisala_rs485_b" I R 8350 5150 60 
+$EndSheet
+Text Label 8650 4200 0    60   ~ 0
+vaisala_rs485_b
 Wire Wire Line
 	6000 1650 7200 1650
 Wire Wire Line
@@ -528,27 +557,15 @@ Wire Wire Line
 Wire Wire Line
 	6000 1650 6000 2850
 Wire Wire Line
-	6000 2850 5450 2850
-Wire Wire Line
 	6200 1950 6200 3050
-Wire Wire Line
-	6200 3050 5450 3050
-Wire Wire Line
-	5450 3150 6400 3150
 Wire Wire Line
 	6400 3150 6400 2100
 Wire Wire Line
-	5450 3250 8550 3250
-Wire Wire Line
-	8550 3250 8550 2100
+	8550 2100 8550 3250
 Wire Wire Line
 	8650 1950 8650 3350
 Wire Wire Line
-	8650 3350 5450 3350
-Wire Wire Line
 	8850 1650 8850 3550
-Wire Wire Line
-	8850 3550 5450 3550
 Wire Wire Line
 	4100 5050 4000 5050
 Wire Wire Line
@@ -593,16 +610,6 @@ Wire Wire Line
 	3250 6700 3250 4550
 Wire Wire Line
 	3250 4550 4100 4550
-$Sheet
-S 600  6500 800  500 
-U 598B41A3
-F0 "PT module interface" 60
-F1 "pt-module-interface.sch" 60
-F2 "prb4_pwr_btn" I R 1400 6600 60 
-F3 "prb4_pwr_led_in" I R 1400 6800 60 
-F4 "prb4_rs_btn" I R 1400 6700 60 
-F5 "prb4_rs_led_in" I R 1400 6900 60 
-$EndSheet
 Wire Wire Line
 	1400 6800 3350 6800
 Wire Wire Line
@@ -619,16 +626,72 @@ Wire Wire Line
 	3500 7300 3700 7300
 Wire Wire Line
 	3700 7300 3700 4950
-$Sheet
-S 7400 4800 1000 700 
-U 59933B07
-F0 "Probe module" 60
-F1 "probe_module.sch" 60
-F2 "prb3_pwr_ctrl" I L 7400 4900 60 
-F3 "prb3_rs_ctrl" I L 7400 5000 60 
-F4 "prb4_rs_ctrl" I L 7400 5100 60 
-F5 "prb4_pwr_ctrl" I L 7400 5200 60 
-F6 "vaisala_rs485_a" I R 8400 5400 60 
-F7 "vaisala_rs485_b" I R 8400 5300 60 
-$EndSheet
+Wire Wire Line
+	6000 2850 5650 2850
+Wire Wire Line
+	7350 3800 5650 3800
+Wire Wire Line
+	7350 3900 5650 3900
+Wire Wire Line
+	5650 4000 7350 4000
+Wire Wire Line
+	7350 4100 5650 4100
+Wire Wire Line
+	7350 5050 6900 5050
+Wire Wire Line
+	6900 5050 6900 4500
+Wire Wire Line
+	6900 4500 5650 4500
+Wire Wire Line
+	7350 4950 7000 4950
+Wire Wire Line
+	7000 4950 7000 4400
+Wire Wire Line
+	7000 4400 5650 4400
+Wire Wire Line
+	7350 4850 7100 4850
+Wire Wire Line
+	7100 4850 7100 4300
+Wire Wire Line
+	7100 4300 5650 4300
+Wire Wire Line
+	7350 4750 7200 4750
+Wire Wire Line
+	7200 4750 7200 4200
+Wire Wire Line
+	7200 4200 5650 4200
+Wire Wire Line
+	6200 1950 7200 1950
+Wire Wire Line
+	6200 3050 5650 3050
+Wire Wire Line
+	6400 3150 5650 3150
+Wire Wire Line
+	8550 3250 5650 3250
+Wire Wire Line
+	8650 3350 5650 3350
+Wire Wire Line
+	8850 3550 5650 3550
+Wire Wire Line
+	8650 4200 8350 4200
+Text Label 8650 5150 0    60   ~ 0
+vaisala_rs485_b
+Wire Wire Line
+	8650 5150 8350 5150
+Text Label 8650 4300 0    60   ~ 0
+vaisala_rs485_a
+Text Label 8650 5250 0    60   ~ 0
+vaisala_rs485_a
+Wire Wire Line
+	8650 4300 8350 4300
+Wire Wire Line
+	8350 5250 8650 5250
+Text Label 5550 5650 0    60   ~ 0
+vaisala_rs485_b
+Text Label 5550 5550 0    60   ~ 0
+vaisala_rs485_a
+Wire Wire Line
+	5550 5550 5050 5550
+Wire Wire Line
+	5050 5650 5550 5650
 $EndSCHEMATC

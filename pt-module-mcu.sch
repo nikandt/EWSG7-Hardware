@@ -33,7 +33,6 @@ LIBS:switches
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:relays
-LIBS:components
 LIBS:pt-module-cache
 EELAYER 25 0
 EELAYER END
@@ -72,22 +71,22 @@ F 3 "" H 1500 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small 27pF
+L C_Small C?
 U 1 1 597ECFD6
 P 1150 6600
-F 0 "27pF" H 1160 6670 50  0000 L CNN
-F 1 "C_Small" H 1160 6520 50  0000 L CNN
+F 0 "C?" H 1160 6670 50  0000 L CNN
+F 1 "27pF" H 1160 6520 50  0000 L CNN
 F 2 "" H 1150 6600 50  0001 C CNN
 F 3 "" H 1150 6600 50  0001 C CNN
 	1    1150 6600
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small 27pF
+L C_Small C?
 U 1 1 597ED20D
 P 1850 6600
-F 0 "27pF" H 1860 6670 50  0000 L CNN
-F 1 "C_Small" H 1860 6520 50  0000 L CNN
+F 0 "C?" H 1860 6670 50  0000 L CNN
+F 1 "27pF" H 1860 6520 50  0000 L CNN
 F 2 "" H 1850 6600 50  0001 C CNN
 F 3 "" H 1850 6600 50  0001 C CNN
 	1    1850 6600
@@ -120,11 +119,11 @@ RCC_OSC_OUT
 Text Label 1150 6250 1    60   ~ 0
 RCC_OSC_IN
 $Comp
-L R 10k
+L R R?
 U 1 1 597EF7C5
 P 2050 2050
-F 0 "10k" V 2130 2050 50  0000 C CNN
-F 1 "R" V 2050 2050 50  0000 C CNN
+F 0 "R?" V 2130 2050 50  0000 C CNN
+F 1 "10k" V 2050 2050 50  0000 C CNN
 F 2 "" V 1980 2050 50  0001 C CNN
 F 3 "" H 2050 2050 50  0001 C CNN
 	1    2050 2050
@@ -325,11 +324,11 @@ UART2_de
 Text HLabel 9950 5250 2    60   Input ~ 0
 BUS_TERM_CTRL
 $Comp
-L R 10k?
+L R R?
 U 1 1 598A8EB2
 P 1250 2250
-F 0 "10k?" V 1330 2250 50  0000 C CNN
-F 1 "R" V 1250 2250 50  0000 C CNN
+F 0 "R?" V 1330 2250 50  0000 C CNN
+F 1 "10k" V 1250 2250 50  0000 C CNN
 F 2 "" V 1180 2250 50  0001 C CNN
 F 3 "" H 1250 2250 50  0001 C CNN
 	1    1250 2250
@@ -441,4 +440,20 @@ Text HLabel 9950 2450 2    60   Input ~ 0
 prb_btn_pwr_master
 Text HLabel 9950 2550 2    60   Input ~ 0
 prb_btn_rs_master
+Text HLabel 9950 2650 2    60   Input ~ 0
+PRB_1_pwr_ctrl
+Text HLabel 9950 2750 2    60   Input ~ 0
+PRB_1_rs_ctrl
+Text HLabel 9950 2950 2    60   Input ~ 0
+PRB_2_rs_ctrl
+Text HLabel 9950 2850 2    60   Input ~ 0
+PRB_2_pwr_ctrl
+Text HLabel 9950 3750 2    60   Input ~ 0
+PRB_3_pwr_ctrl
+Text HLabel 9950 3950 2    60   Input ~ 0
+PRB_4_pwr_ctrl
+Text HLabel 9950 3850 2    60   Input ~ 0
+PRB_3_rs_ctrl
+Text HLabel 9950 4050 2    60   Input ~ 0
+PRB_4_rs_ctrl
 $EndSCHEMATC
