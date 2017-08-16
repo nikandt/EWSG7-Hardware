@@ -60,8 +60,7 @@ S 2400 800  1750 900
 U 5979DB00
 F0 "PT Module Power" 60
 F1 "pt-module-power.sch" 60
-F2 "PWREN" I L 2400 1075 60 
-F3 "External_VCC" I L 2400 1600 60 
+F2 "External_VCC" I L 2400 1350 60 
 $EndSheet
 $Sheet
 S 7200 1450 1200 1300
@@ -305,7 +304,7 @@ F 3 "" H 2000 2300 50  0001 C CNN
 	1    2000 2300
 	-1   0    0    1   
 $EndComp
-Text Label 2400 1600 0    60   ~ 0
+Text Label 2200 1350 2    60   ~ 0
 E_VCC
 Text Label 1800 2400 2    60   ~ 0
 E_VCC
@@ -489,6 +488,35 @@ F7 "vaisala_rs485_b" I R 8350 5150 60
 $EndSheet
 Text Label 8650 4200 0    60   ~ 0
 vaisala_rs485_b
+Text Label 8650 5150 0    60   ~ 0
+vaisala_rs485_b
+Text Label 8650 4300 0    60   ~ 0
+vaisala_rs485_a
+Text Label 8650 5250 0    60   ~ 0
+vaisala_rs485_a
+Text Label 5550 5650 0    60   ~ 0
+vaisala_rs485_b
+Text Label 5550 5550 0    60   ~ 0
+vaisala_rs485_a
+Text Label 9000 2400 0    60   ~ 0
+vaisala_rs485_a
+Text Label 9000 2550 0    60   ~ 0
+vaisala_rs485_b
+Text Label 6850 3100 0    60   ~ 0
+intermodule_rs485_a
+Text Label 6850 3000 0    60   ~ 0
+intermodule_rs485_b
+$Comp
+L PWR_FLAG #FLG017
+U 1 1 5996610E
+P 1325 2200
+F 0 "#FLG017" H 1325 2275 50  0001 C CNN
+F 1 "PWR_FLAG" H 1325 2350 50  0000 C CNN
+F 2 "" H 1325 2200 50  0001 C CNN
+F 3 "" H 1325 2200 50  0001 C CNN
+	1    1325 2200
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
 	6000 1650 7200 1650
 Wire Wire Line
@@ -681,38 +709,20 @@ Wire Wire Line
 	8850 3550 5650 3550
 Wire Wire Line
 	8650 4200 8350 4200
-Text Label 8650 5150 0    60   ~ 0
-vaisala_rs485_b
 Wire Wire Line
 	8650 5150 8350 5150
-Text Label 8650 4300 0    60   ~ 0
-vaisala_rs485_a
-Text Label 8650 5250 0    60   ~ 0
-vaisala_rs485_a
 Wire Wire Line
 	8650 4300 8350 4300
 Wire Wire Line
 	8350 5250 8650 5250
-Text Label 5550 5650 0    60   ~ 0
-vaisala_rs485_b
-Text Label 5550 5550 0    60   ~ 0
-vaisala_rs485_a
 Wire Wire Line
 	5550 5550 5050 5550
 Wire Wire Line
 	5050 5650 5550 5650
-Text Label 9000 2400 0    60   ~ 0
-vaisala_rs485_a
-Text Label 9000 2550 0    60   ~ 0
-vaisala_rs485_b
 Wire Wire Line
 	9000 2400 8400 2400
 Wire Wire Line
 	9000 2550 8400 2550
-Text Label 6850 3100 0    60   ~ 0
-intermodule_rs485_a
-Text Label 6850 3000 0    60   ~ 0
-intermodule_rs485_b
 Wire Wire Line
 	7200 2550 6800 2550
 Wire Wire Line
@@ -735,17 +745,6 @@ Wire Wire Line
 Wire Wire Line
 	8600 1800 8600 1950
 Connection ~ 8600 1950
-$Comp
-L PWR_FLAG #FLG017
-U 1 1 5996610E
-P 1325 2200
-F 0 "#FLG017" H 1325 2275 50  0001 C CNN
-F 1 "PWR_FLAG" H 1325 2350 50  0000 C CNN
-F 2 "" H 1325 2200 50  0001 C CNN
-F 3 "" H 1325 2200 50  0001 C CNN
-	1    1325 2200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1325 2200 1050 2200
 Wire Wire Line
@@ -753,4 +752,6 @@ Wire Wire Line
 Wire Wire Line
 	1050 2150 1100 2150
 Connection ~ 1050 2150
+Wire Wire Line
+	2400 1350 2200 1350
 $EndSCHEMATC

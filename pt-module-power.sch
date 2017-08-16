@@ -502,10 +502,6 @@ F 3 "" H 6300 2275 50  0001 C CNN
 	1    6300 2275
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4500 2375 4600 2375
-Wire Wire Line
-	4500 2475 4500 2375
 Wire Notes Line
 	8025 1500 3225 1500
 Wire Notes Line
@@ -528,8 +524,6 @@ Wire Wire Line
 	4150 2600 4150 2975
 Text Notes 3300 1725 0    60   ~ 0
 Switching Regulator\n+18..48V in, +15V/500mA out
-Text HLabel 4500 2475 3    60   Input ~ 0
-PWREN
 $Comp
 L MCP16331 U1
 U 1 1 597A1586
@@ -589,4 +583,5 @@ F 3 "" H 3475 4400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 3600 4400
+NoConn ~ 4600 2375
 $EndSCHEMATC

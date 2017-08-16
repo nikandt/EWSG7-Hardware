@@ -161,67 +161,45 @@ $EndComp
 $Comp
 L C_Small C17
 U 1 1 597F1898
-P 6000 1100
-F 0 "C17" H 6010 1170 50  0000 L CNN
-F 1 "C_Small" H 6010 1020 50  0000 L CNN
-F 2 "" H 6000 1100 50  0001 C CNN
-F 3 "" H 6000 1100 50  0001 C CNN
-	1    6000 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C18
-U 1 1 597F1903
-P 6200 1100
-F 0 "C18" H 6210 1170 50  0000 L CNN
-F 1 "C_Small" H 6210 1020 50  0000 L CNN
-F 2 "" H 6200 1100 50  0001 C CNN
-F 3 "" H 6200 1100 50  0001 C CNN
-	1    6200 1100
+P 5925 1100
+F 0 "C17" H 5935 1170 50  0000 L CNN
+F 1 "100nF" H 5935 1020 50  0000 L CNN
+F 2 "" H 5925 1100 50  0001 C CNN
+F 3 "" H 5925 1100 50  0001 C CNN
+	1    5925 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C19
 U 1 1 597F1997
-P 6400 1100
-F 0 "C19" H 6410 1170 50  0000 L CNN
-F 1 "C_Small" H 6410 1020 50  0000 L CNN
-F 2 "" H 6400 1100 50  0001 C CNN
-F 3 "" H 6400 1100 50  0001 C CNN
-	1    6400 1100
+P 6500 1100
+F 0 "C19" H 6510 1170 50  0000 L CNN
+F 1 "100nF" H 6510 1020 50  0000 L CNN
+F 2 "" H 6500 1100 50  0001 C CNN
+F 3 "" H 6500 1100 50  0001 C CNN
+	1    6500 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C20
 U 1 1 597F19E6
-P 6600 1100
-F 0 "C20" H 6610 1170 50  0000 L CNN
-F 1 "C_Small" H 6610 1020 50  0000 L CNN
-F 2 "" H 6600 1100 50  0001 C CNN
-F 3 "" H 6600 1100 50  0001 C CNN
-	1    6600 1100
+P 6825 1100
+F 0 "C20" H 6835 1170 50  0000 L CNN
+F 1 "100nF" H 6835 1020 50  0000 L CNN
+F 2 "" H 6825 1100 50  0001 C CNN
+F 3 "" H 6825 1100 50  0001 C CNN
+	1    6825 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C16
 U 1 1 597F1A58
-P 5800 1100
-F 0 "C16" H 5810 1170 50  0000 L CNN
-F 1 "C_Small" H 5810 1020 50  0000 L CNN
-F 2 "" H 5800 1100 50  0001 C CNN
-F 3 "" H 5800 1100 50  0001 C CNN
-	1    5800 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C21
-U 1 1 597F1AA1
-P 6800 1100
-F 0 "C21" H 6810 1170 50  0000 L CNN
-F 1 "C_Small" H 6810 1020 50  0000 L CNN
-F 2 "" H 6800 1100 50  0001 C CNN
-F 3 "" H 6800 1100 50  0001 C CNN
-	1    6800 1100
+P 5625 1100
+F 0 "C16" H 5635 1170 50  0000 L CNN
+F 1 "100nF" H 5635 1020 50  0000 L CNN
+F 2 "" H 5625 1100 50  0001 C CNN
+F 3 "" H 5625 1100 50  0001 C CNN
+	1    5625 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -268,52 +246,6 @@ Text HLabel 9950 4550 2    60   Input ~ 0
 UART3_rx
 Text HLabel 9950 5150 2    60   Output ~ 0
 UART3_de
-Connection ~ 6050 1650
-Wire Wire Line
-	1900 2050 1750 2050
-Wire Wire Line
-	1850 1850 1750 1850
-Connection ~ 2250 2050
-Wire Wire Line
-	2250 1850 2250 2050
-Wire Wire Line
-	2200 2050 2550 2050
-Connection ~ 1850 6400
-Connection ~ 1150 6400
-Wire Wire Line
-	1150 6700 1150 6800
-Wire Wire Line
-	1850 6700 1850 6800
-Wire Wire Line
-	1150 6250 1150 6500
-Wire Wire Line
-	1350 6400 1150 6400
-Wire Wire Line
-	1850 6250 1850 6500
-Wire Wire Line
-	1650 6400 1850 6400
-Wire Wire Line
-	5900 1650 6800 1650
-Connection ~ 6150 1650
-Connection ~ 6250 1650
-Connection ~ 6350 1650
-Wire Wire Line
-	6800 1650 6800 1200
-Connection ~ 6450 1650
-Wire Wire Line
-	6800 1200 5800 1200
-Connection ~ 6600 1200
-Connection ~ 6400 1200
-Connection ~ 6200 1200
-Connection ~ 6000 1200
-Wire Wire Line
-	5400 1000 6800 1000
-Connection ~ 6000 1000
-Connection ~ 6600 1000
-Connection ~ 6200 1000
-Connection ~ 6400 1000
-Connection ~ 5800 1000
-Connection ~ 6800 1200
 Text HLabel 9950 4350 2    60   Input ~ 0
 UART1_TX
 Text HLabel 9950 4450 2    60   Input ~ 0
@@ -374,30 +306,6 @@ F 3 "" H 950 2050 50  0001 C CNN
 	1    950  2050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1100 2250 950  2250
-Wire Wire Line
-	1050 2050 950  2050
-Connection ~ 1450 2250
-Wire Wire Line
-	1450 2050 1450 2250
-Wire Wire Line
-	1400 2250 2550 2250
-Wire Wire Line
-	6050 5650 6050 5700
-Wire Wire Line
-	6050 5700 6450 5700
-Wire Wire Line
-	6450 5700 6450 5650
-Wire Wire Line
-	6350 5650 6350 5700
-Connection ~ 6350 5700
-Wire Wire Line
-	6250 5650 6250 5800
-Connection ~ 6250 5700
-Wire Wire Line
-	6150 5650 6150 5700
-Connection ~ 6150 5700
 $Comp
 L GND #PWR087
 U 1 1 598A971D
@@ -409,8 +317,6 @@ F 3 "" H 6250 5800 50  0001 C CNN
 	1    6250 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 1000 5400 1050
 Text HLabel 2550 3750 0    60   Input ~ 0
 prb_btn_1_pwr
 Text HLabel 2550 3850 0    60   Input ~ 0
@@ -475,4 +381,119 @@ NoConn ~ 9950 4750
 NoConn ~ 9950 4850
 NoConn ~ 9950 4950
 NoConn ~ 9950 5050
+$Comp
+L CP_Small C21
+U 1 1 5994BDA8
+P 7300 1100
+F 0 "C21" H 7310 1170 50  0000 L CNN
+F 1 "4.7uF" H 7310 1020 50  0000 L CNN
+F 2 "" H 7300 1100 50  0001 C CNN
+F 3 "" H 7300 1100 50  0001 C CNN
+	1    7300 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C18
+U 1 1 597F1903
+P 6200 1100
+F 0 "C18" H 6210 1170 50  0000 L CNN
+F 1 "100nF" H 6210 1020 50  0000 L CNN
+F 2 "" H 6200 1100 50  0001 C CNN
+F 3 "" H 6200 1100 50  0001 C CNN
+	1    6200 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 1650
+Wire Wire Line
+	1900 2050 1750 2050
+Wire Wire Line
+	1850 1850 1750 1850
+Connection ~ 2250 2050
+Wire Wire Line
+	2250 1850 2250 2050
+Wire Wire Line
+	2200 2050 2550 2050
+Connection ~ 1850 6400
+Connection ~ 1150 6400
+Wire Wire Line
+	1150 6700 1150 6800
+Wire Wire Line
+	1850 6700 1850 6800
+Wire Wire Line
+	1150 6250 1150 6500
+Wire Wire Line
+	1350 6400 1150 6400
+Wire Wire Line
+	1850 6250 1850 6500
+Wire Wire Line
+	1650 6400 1850 6400
+Wire Wire Line
+	6825 1650 5900 1650
+Connection ~ 6150 1650
+Connection ~ 6250 1650
+Connection ~ 6350 1650
+Connection ~ 6450 1650
+Wire Wire Line
+	1100 2250 950  2250
+Wire Wire Line
+	1050 2050 950  2050
+Connection ~ 1450 2250
+Wire Wire Line
+	1450 2050 1450 2250
+Wire Wire Line
+	1400 2250 2550 2250
+Wire Wire Line
+	6050 5650 6050 5700
+Wire Wire Line
+	6050 5700 6450 5700
+Wire Wire Line
+	6450 5700 6450 5650
+Wire Wire Line
+	6350 5650 6350 5700
+Connection ~ 6350 5700
+Wire Wire Line
+	6250 5650 6250 5800
+Connection ~ 6250 5700
+Wire Wire Line
+	6150 5650 6150 5700
+Connection ~ 6150 5700
+Wire Wire Line
+	5400 925  5400 1050
+Wire Wire Line
+	5625 1000 5625 925 
+Wire Wire Line
+	5400 925  7300 925 
+Wire Wire Line
+	7300 925  7300 1000
+Wire Wire Line
+	6825 1000 6825 925 
+Connection ~ 6825 925 
+Wire Wire Line
+	6500 1000 6500 925 
+Connection ~ 6500 925 
+Wire Wire Line
+	6200 1000 6200 925 
+Connection ~ 6200 925 
+Wire Wire Line
+	5925 1000 5925 925 
+Connection ~ 5925 925 
+Connection ~ 5625 925 
+Wire Wire Line
+	7300 1200 7300 1275
+Wire Wire Line
+	7300 1275 5625 1275
+Wire Wire Line
+	5625 1275 5625 1200
+Wire Wire Line
+	5925 1200 5925 1275
+Connection ~ 5925 1275
+Wire Wire Line
+	6200 1200 6200 1275
+Connection ~ 6200 1275
+Wire Wire Line
+	6500 1200 6500 1275
+Connection ~ 6500 1275
+Wire Wire Line
+	6825 1200 6825 1650
+Connection ~ 6825 1275
 $EndSCHEMATC
