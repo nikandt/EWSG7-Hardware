@@ -1,4 +1,4 @@
-update=8/15/2017 6:09:04 PM
+update=8/16/2017 9:45:14 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,3 +71,4 @@ LibName39=microchip_pic16mcu
 LibName40=microchip_pic18mcu
 LibName41=microchip_pic24mcu
 LibName42=microchip_pic32mcu
+LibName43=pt-module-cache
