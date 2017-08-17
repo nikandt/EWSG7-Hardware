@@ -60,7 +60,7 @@ S 2400 800  1750 900
 U 5979DB00
 F0 "PT Module Power" 60
 F1 "pt-module-power.sch" 60
-F2 "External_VCC" I L 2400 1350 60 
+F2 "External_VCC" I L 2400 1375 60 
 $EndSheet
 $Sheet
 S 7200 1450 1200 1300
@@ -108,7 +108,7 @@ U 1 1 59820FE7
 P 10850 1050
 F 0 "J4" H 10850 1350 50  0000 C CNN
 F 1 "M12 out" V 10950 1050 50  0000 C CNN
-F 2 "" H 10850 1050 50  0001 C CNN
+F 2 "Connectors_Hirose:Hirose_DF13C-05P-1.25V_05x1.25mm_Straight" H 10850 1050 50  0001 C CNN
 F 3 "" H 10850 1050 50  0001 C CNN
 	1    10850 1050
 	1    0    0    -1  
@@ -146,7 +146,7 @@ U 1 1 59829448
 P 10850 1900
 F 0 "J5" H 10850 2350 50  0000 C CNN
 F 1 "Ethercon out" V 10950 1900 50  0000 C CNN
-F 2 "" H 10850 1900 50  0001 C CNN
+F 2 "Connectors_Hirose:Hirose_DF13C-08P-1.25V_08x1.25mm_Straight" H 10850 1900 50  0001 C CNN
 F 3 "" H 10850 1900 50  0001 C CNN
 	1    10850 1900
 	1    0    0    -1  
@@ -157,7 +157,7 @@ U 1 1 5982A52D
 P 850 1000
 F 0 "J1" H 850 1300 50  0000 C CNN
 F 1 "M12 in" V 950 1000 50  0000 C CNN
-F 2 "" H 850 1000 50  0001 C CNN
+F 2 "Connectors_Hirose:Hirose_DF13C-05P-1.25V_05x1.25mm_Straight" H 850 1000 50  0001 C CNN
 F 3 "" H 850 1000 50  0001 C CNN
 	1    850  1000
 	-1   0    0    1   
@@ -236,7 +236,7 @@ U 1 1 59840D9B
 P 850 1800
 F 0 "J2" H 850 2250 50  0000 C CNN
 F 1 "Ethercon out" V 950 1800 50  0000 C CNN
-F 2 "" H 850 1800 50  0001 C CNN
+F 2 "Connectors_Hirose:Hirose_DF13C-08P-1.25V_08x1.25mm_Straight" H 850 1800 50  0001 C CNN
 F 3 "" H 850 1800 50  0001 C CNN
 	1    850  1800
 	-1   0    0    1   
@@ -266,7 +266,7 @@ U 1 1 5984EE28
 P 850 2500
 F 0 "J3" H 850 2650 50  0000 C CNN
 F 1 "PWR in" V 950 2500 50  0000 C CNN
-F 2 "" H 850 2500 50  0001 C CNN
+F 2 "Connectors_Hirose:Hirose_DF13C-02P-1.25V_02x1.25mm_Straight" H 850 2500 50  0001 C CNN
 F 3 "" H 850 2500 50  0001 C CNN
 	1    850  2500
 	-1   0    0    1   
@@ -299,12 +299,12 @@ U 1 1 5985369A
 P 2000 2300
 F 0 "SW1" H 2000 2470 50  0000 C CNN
 F 1 "pwr-source switch" H 2000 2100 50  0000 C CNN
-F 2 "" H 2000 2300 50  0001 C CNN
+F 2 "Connectors_Hirose:Hirose_DF13C-03P-1.25V_03x1.25mm_Straight" H 2000 2300 50  0001 C CNN
 F 3 "" H 2000 2300 50  0001 C CNN
 	1    2000 2300
 	-1   0    0    1   
 $EndComp
-Text Label 2200 1350 2    60   ~ 0
+Text Label 2250 1375 2    60   ~ 0
 E_VCC
 Text Label 1800 2400 2    60   ~ 0
 E_VCC
@@ -488,35 +488,6 @@ F7 "vaisala_rs485_b" I R 8350 5150 60
 $EndSheet
 Text Label 8650 4200 0    60   ~ 0
 vaisala_rs485_b
-Text Label 8650 5150 0    60   ~ 0
-vaisala_rs485_b
-Text Label 8650 4300 0    60   ~ 0
-vaisala_rs485_a
-Text Label 8650 5250 0    60   ~ 0
-vaisala_rs485_a
-Text Label 5550 5650 0    60   ~ 0
-vaisala_rs485_b
-Text Label 5550 5550 0    60   ~ 0
-vaisala_rs485_a
-Text Label 9000 2400 0    60   ~ 0
-vaisala_rs485_a
-Text Label 9000 2550 0    60   ~ 0
-vaisala_rs485_b
-Text Label 6850 3100 0    60   ~ 0
-intermodule_rs485_a
-Text Label 6850 3000 0    60   ~ 0
-intermodule_rs485_b
-$Comp
-L PWR_FLAG #FLG017
-U 1 1 5996610E
-P 1325 2200
-F 0 "#FLG017" H 1325 2275 50  0001 C CNN
-F 1 "PWR_FLAG" H 1325 2350 50  0000 C CNN
-F 2 "" H 1325 2200 50  0001 C CNN
-F 3 "" H 1325 2200 50  0001 C CNN
-	1    1325 2200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6000 1650 7200 1650
 Wire Wire Line
@@ -709,20 +680,38 @@ Wire Wire Line
 	8850 3550 5650 3550
 Wire Wire Line
 	8650 4200 8350 4200
+Text Label 8650 5150 0    60   ~ 0
+vaisala_rs485_b
 Wire Wire Line
 	8650 5150 8350 5150
+Text Label 8650 4300 0    60   ~ 0
+vaisala_rs485_a
+Text Label 8650 5250 0    60   ~ 0
+vaisala_rs485_a
 Wire Wire Line
 	8650 4300 8350 4300
 Wire Wire Line
 	8350 5250 8650 5250
+Text Label 5550 5650 0    60   ~ 0
+vaisala_rs485_b
+Text Label 5550 5550 0    60   ~ 0
+vaisala_rs485_a
 Wire Wire Line
 	5550 5550 5050 5550
 Wire Wire Line
 	5050 5650 5550 5650
+Text Label 9000 2400 0    60   ~ 0
+vaisala_rs485_a
+Text Label 9000 2550 0    60   ~ 0
+vaisala_rs485_b
 Wire Wire Line
 	9000 2400 8400 2400
 Wire Wire Line
 	9000 2550 8400 2550
+Text Label 6850 3100 0    60   ~ 0
+intermodule_rs485_a
+Text Label 6850 3000 0    60   ~ 0
+intermodule_rs485_b
 Wire Wire Line
 	7200 2550 6800 2550
 Wire Wire Line
@@ -745,6 +734,17 @@ Wire Wire Line
 Wire Wire Line
 	8600 1800 8600 1950
 Connection ~ 8600 1950
+$Comp
+L PWR_FLAG #FLG017
+U 1 1 5996610E
+P 1325 2200
+F 0 "#FLG017" H 1325 2275 50  0001 C CNN
+F 1 "PWR_FLAG" H 1325 2350 50  0000 C CNN
+F 2 "" H 1325 2200 50  0001 C CNN
+F 3 "" H 1325 2200 50  0001 C CNN
+	1    1325 2200
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
 	1325 2200 1050 2200
 Wire Wire Line
@@ -753,5 +753,5 @@ Wire Wire Line
 	1050 2150 1100 2150
 Connection ~ 1050 2150
 Wire Wire Line
-	2400 1350 2200 1350
+	2250 1375 2400 1375
 $EndSCHEMATC
